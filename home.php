@@ -77,7 +77,7 @@
       </nav>
 <!--Carousel-->
 <div class="video">
-    <video autoplay muted loop width="400" height="953">
+    <video autoplay muted loop width="100%" height="953">
         <source  src="images/intro.mp4" type="video/mp4">
     </video>  
 </div>

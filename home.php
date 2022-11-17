@@ -22,7 +22,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/home.css?<?php echo time();?>">
     
     </head>
 <body>
@@ -76,11 +76,13 @@
         </div>
       </nav>
 <!--Carousel-->
-<video autoplay muted loop height="2%">
-  <source src="images/intro.mp4" type="video/mp4">
-</video>
+<div class="video">
+    <video autoplay muted loop width="400" height="953">
+        <source  src="images/intro.mp4" type="video/mp4">
+    </video>  
+</div>
 
-  <!--about section -->
+<!--about section -->
 
 <section id="about" class="about section-padding">
     <div class="container">

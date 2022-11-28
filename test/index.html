@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <button class="btn btn-primary" type="button" id="prime" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+       Filter
+      </button>
+      <p class="fs-5 mb-4">Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. 
+        Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.</p>
+    <p class="fs-5 mb-4"><p>Furnishings and interior designs were created by the iconic T.H. Robsjohn- Gibbings, setting a new standard for lavish home design.
+         With no neighbors and surrounded by the fairways of the Bel-Air Country Club golf course, the compound is expansive, private and secure and is less than ten minutes to Rodeo Drive.
+        </p></p>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filter</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <section class="col-12" id="fs_price_body">
+                <div>
+                    <span class="heading">
+                        Price
+                    </span>
+                    <label class="form-label" for="rangePrice"></label>
+                    <div class="range">
+                    <input type="range" class="form-range" id="rangePrice" min="0" max="200" step="25" value="100"/>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>1$</li>
+                            <li>2$</li>
+                        </ul>
+                    </div>
+                </div>
+          </section>
+          <div class="land mt-3">
+            <span class="heading">
+                Size
+            </span>
+            <div class="dropdown">
+            <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Min Size
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">10000</a></li>
+                  <li><a class="dropdown-item" href="#">15000</a></li>
+                  <li><a class="dropdown-item" href="#">20000</a></li>
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Max Size
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">30000</a></li>
+                  <li><a class="dropdown-item" href="#">50000</a></li>
+                  <li><a class="dropdown-item" href="#">110000</a></li>
+                </ul>
+              </div>
+          </div>
+                <span class="heading">
+                    Location
+                </span>
+                <div class="contents">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Beverly Hills">
+                        <label class="form-check-label" for="Beverly Hills">
+                          Beverly Hills
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Bel Air">
+                        <label class="form-check-label" for="Bel Air">
+                          Bel Air
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Holmbly Hills">
+                        <label class="form-check-label" for="Holmbly Hills">
+                          Holmbly Hills
+                        </label>
+                      </div>
+                </div>
+                <div class="beds">
+                    <div class="beds-title">Bedrooms</div>
+                    <div class="beds-content">
+                        <a href="#" class="btn"><span>1</span></a>
+                        <a href="#" class="btn"><span>2</span></a>
+                        <a href="#" class="btn"><span>3</span></a>
+                        <a href="#" class="btn"><span>4</span></a>
+                        <a href="#" class="btn"><span>5+</span></a>
+
+                    </div>
+                </div>
+                <div class="baths">
+                    <div class="baths-title">Bathrooms</div>
+                    <div class="baths-content">
+                        <a href="#" class="btn"><span>1</span></a>
+                        <a href="#" class="btn"><span>2</span></a>
+                        <a href="#" class="btn"><span>3</span></a>
+                        <a href="#" class="btn"><span>4</span></a>
+                        <a href="#" class="btn"><span>5+</span></a>
+
+                    </div>
+                </div>
+                <span class="heading">
+                    Others
+                </span>
+                <div class="contents">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Indoor Pool">
+                        <label class="form-check-label" for="Indoor Pool">
+                          Indoor Pool
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Outdoor Pool">
+                        <label class="form-check-label" for="Outdoor Pool">
+                          Outdoor Pool
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Sauna">
+                        <label class="form-check-label" for="Sauna">
+                          Sauna
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Massage room">
+                        <label class="form-check-label" for="Massage room">
+                          Massage room
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Wine cellar">
+                        <label class="form-check-label" for="Wine cellar">
+                          Wine cellar
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Cinema">
+                        <label class="form-check-label" for="Cinema">
+                          Cinema
+                        </label>
+                      </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div id='google_translate_element'></div>
+
+      <script>
+     
+      function googleTranslateElementInit() {
+     
+      new google.translate.TranslateElement({
+     
+      pageLanguage: 'en,bg',
+     
+      includedLanguages:'en,bg', 
+     
+      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+     
+      }, 'google_translate_element');
+     
+      }
+     
+      </script>
+     
+      <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+<!-- Explanation -->
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

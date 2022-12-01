@@ -22,13 +22,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/home.css?<?php echo time();?>">
-    
+        <link rel="stylesheet" href="css/home.css?<?php echo time();?>">
     </head>
 <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-        <div class="container">
+        <div class="container" id="myDiv">
           <a class="navbar-brand" href="home.php"><b>THE HILTON AGENCY</b></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -75,15 +74,24 @@
           </div>
         </div>
       </nav>
-<!--Carousel-->
+
+<!--Video-->
 <div class="video">
-    <video autoplay muted loop width="100%" height="940">
+    <video id="video" autoplay muted loop width="100%" height="620">
         <source  src="images/intro.mp4" type="video/mp4">
     </video>  
 </div>
 
-<!--about section -->
+<!-- Fixed Video Height-->
+<script>
+    let height = window.innerHeight;
+    var clientHeight = document.getElementById('myDiv').clientHeight;
 
+    var vh = height - clientHeight + 70;
+    document.getElementById("video").style.height = "" + vh + "px";
+</script>
+
+<!--About section -->
 <section id="about" class="about section-padding">
     <div class="container">
         <div class="row">
@@ -196,7 +204,7 @@
     </div>
 </section>
 
-<!--footer-->
+<!--Footer-->
 <footer class="bg-dark p-2 text-center">
     <div class="container">
         <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>

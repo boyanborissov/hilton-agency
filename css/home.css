@@ -6,16 +6,13 @@ body{
    background-color: white;
 }
 
-.section-padding{
-    padding: 100px 0;
-}
-
 .navbar-nav a{
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
     font-weight: 500;
     color: white;
+    margin-top: 6px;
 }
 
 .navbar-brand{
@@ -25,25 +22,16 @@ body{
 }
 
 .navbar-light{
-    color: black;
-    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.navbar-light .navbar-brand:focus,
-.navbar-light .navbar-brand:hover{
-    color: black;
-}
-
-.navbar-light .navbar-nav .navbar-link{
-    color: black;
-}
 
 .w-100{
     height: 100vh;    
 }
+
 
 /* .video {
     position: relative;
@@ -55,13 +43,10 @@ body{
 .video video {
     object-fit: cover;
     object-position: 100%;
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; */
 }
-
+.section-padding{
+    padding: 100px 0;
+}
 .about-text {
     text-align: justify;
     width: 80%;
@@ -71,21 +56,61 @@ body{
 .services .card-body i{
 font-size: 30px;
 }
-
-.team .card-body i{
-    font-size: 20px;
+.lead{
+    text-align: center;
 }
-
 .portfolio .card{
     box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
 }
-
-.team .card{
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
+.navbar{
+    transition: all 0.5s;
 }
+ /*google translate Dropdown */
+ 
+ #google_translate_element select{
+    background-color: transparent;
+    color: white;
+    margin-top: 18px;
+    }
+    
+    /*google translate link | logo */
+      .goog-logo-link{
+      display:none!important;
+      }
+    .goog-te-gadget{
+    color:transparent!important;
+    }
+    
+    /* google translate banner-frame */
+    
+    .goog-te-banner-frame{
+    display:none !important;
+    }
+    
+    #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+   .goog-text-highlight { background: none !important; box-shadow: none !important;}
+    
+    body{top:0!important;}
 
-
-
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0.856);
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+      
+      #myBtn:hover {
+        background-color: #555;
+      }
 
 
 /* === responsive css === */

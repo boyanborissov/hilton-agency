@@ -25,11 +25,11 @@
     <link rel="stylesheet" href="css/home.css?<?php echo time();?>">
     
     </head>
-<body>
+<body onload="video()">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="home.php"><b>THE HILTON AGENCY</b></a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container" id="myDiv">
+          <a class="navbar-brand fw-bolder" href="home.php">THE HILTON AGENCY</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -53,6 +53,28 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact_form.php">Contact us</a>
               </li>
+              <div id='google_translate_element'>
+
+      <script>
+     
+      function googleTranslateElementInit() {
+     
+      new google.translate.TranslateElement({
+     
+      pageLanguage: 'en,bg',
+     
+      includedLanguages:'en,bg', 
+     
+      layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+     
+      }, 'google_translate_element');
+     
+      }
+     
+      </script>
+
+      <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+              </div>
               <?php
                 if(isset($_SESSION['username'])) {
                     echo '<li class="nav-item">
@@ -75,12 +97,29 @@
           </div>
         </div>
       </nav>
-<!--Carousel-->
+<!--Video-->
 <div class="video">
-    <video autoplay muted loop width="100%" height="760">
+    <video autoplay muted loop width="100%" height="953">
         <source  src="images/intro.mp4" type="video/mp4">
     </video>  
 </div>
+
+<!-- Fixed Video Height-->
+<script>
+    function video() {
+        let height = window.innerHeight;
+        var clientHeight = document.getElementById('myDiv').clientHeight;
+
+        var vh = height - clientHeight + 70;
+        document.getElementById("video").style.height = "" + vh + "px";
+    }
+    
+</script>
+<!-- <div class="content">
+    <h2>Leading number 1 international agency</h2>
+    <a href="aboutus.php">Learn more</a>
+</div> -->
+
 
 <!--about section -->
 
@@ -112,19 +151,17 @@
                     <p>The services we provide are on the highest level, so nobody can beet us in our game.</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-md-12 col-lg-4">
-                <div class="card text-white text-center bg-dark pb-2">
-                    <div class="card-body">
+                <div class="card text-light text-center bg-dark pb-2 h-100">
+                    <div class="card-body ">
                         <i class="fa-solid fa-house"></i>
                         <h3 class="card-title ">Best Quality</h3>
-                        <p class="lead">The quality we provide is the best not only in America but in the whole world,tha's why we are the best.</p>
+                        <p class="lead text-justify">The quality we provide is the best not only in America but in the whole world,tha's why we are the best.</p>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-4">
-                <div class="card text-white text-center bg-dark pb-2">
+                <div class="card text-white text-center bg-dark pb-2 h-100">
                     <div class="card-body">
                         <i class="fa-solid fa-dollar-sign"></i>
                         <h3 class="card-title">Sustainability</h3>
@@ -133,7 +170,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-12 col-lg-4">
-                <div class="card text-white text-center bg-dark pb-2">
+                <div class="card text-white text-center bg-dark pb-2 h-100">
                     <div class="card-body">
                         <i class="fa-solid fa-chart-line"></i>
                         <h3 class="card-title">Investment</h3>
@@ -155,8 +192,6 @@
                     <p>Our best properties for your style.</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
             <div class="col-12 col-md-12 col-lg-4">
                 <div class=" card text-light text-center bg-white pb-2 h-100">
 <div class="card-body text-dark">
@@ -165,10 +200,10 @@
     </div>
     <h3 class="card-title">La fin</h3>
     <p class="lead"> La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million.</p>
-</div>
+
                 </div>
             </div>
-
+        </div>
             <div class="col-12 col-md-12 col-lg-4">
                 <div class=" card text-light text-center bg-white pb-2 h-100">
 <div class="card-body text-dark">
@@ -177,10 +212,9 @@
     </div>
     <h3 class="card-title">Le Belvedere</h3>
     <p class="lead">The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump. </p>
-</div>
                 </div>
             </div>
-
+        </div>
             <div class="col-12 col-md-12 col-lg-4">
                 <div class=" card text-light text-center bg-white pb-2 h-100">
 <div class="card-body text-dark">
@@ -190,9 +224,10 @@
     <h3 class="card-title">Spelling manor</h3>
     <p class="lead">"The Manor" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.</p>
 </div>
-                </div>
+                
             </div>
         </div>
+    </div>
     </div>
 </section>
 
@@ -202,8 +237,39 @@
         <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
     </div>
 </footer>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<script>
+let mybutton = document.getElementById("myBtn");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+    const nav2 = document.querySelector(".navbar");
+
+    window.addEventListener("scroll", () => {
+        if(window.scrollY >= 700){
+            nav2.classList.add('bg-dark');
+        }else if(window.scrollY < 700){
+            nav2.classList.remove('bg-dark');
+        }
+    })
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 

@@ -99,7 +99,7 @@
       </nav>
 <!--Video-->
 <div class="video">
-    <video autoplay muted loop width="100%" height="953">
+    <video autoplay muted loop width="100%">
         <source  src="images/intro.mp4" type="video/mp4">
     </video>  
 </div>

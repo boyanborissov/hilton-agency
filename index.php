@@ -22,7 +22,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/property_style.css">
+    <link rel="stylesheet" href="css/property_style.css?<?php echo time();?>">
     
     </head>
     <body>
@@ -109,7 +109,7 @@
                           <div class="card-title">
                             <h2>'. $row['title'].'</h2>
                           </div>
-                          <div class="card-text">
+                          <div class="card-text" style="text-align:justify">
                             <p>'. $row['description'].'</p>
                           </div>
                           <form method="get" action="properties-read-more.php" class="mx-auto">

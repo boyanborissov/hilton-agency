@@ -134,23 +134,16 @@ font-size: 30px;
     .navbar-nav{
         text-align: center;
     }
-    .carousel-caption{
-        bottom: 125px;
-    }
-    .carousel-caption h5{
-        font-size: 17px;
-    }
-    .carousel-caption a{
-        padding: 10 px 15px;
-    }
-    .carousel-caption p{
-        width: 100px;
-        line-height:1.6 ;
-    }
     .about-text{
-        padding-top: 50px;
+        text-align: justify;
     }
-    .card{
-        margin-bottom: 30px;
+    .about-text p{
+        text-align: justify;
     }
+    .img-area img{
+        text-align: center;
+    }
+    /* #about {
+        text-align: center;
+    } */
 }

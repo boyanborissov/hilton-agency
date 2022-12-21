@@ -2,10 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8">    
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Hilton Agency</title>
+  <link rel="icon" href="images/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,72 +15,8 @@
 </head>
 <body onload="video()">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container" id="myDiv">
-            <a class="navbar-brand fw-bolder" href="home.php">THE HILTON AGENCY</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.php">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.php">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Properties</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="agents.php">Our Agents</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blogpage.php">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_form.php">Contact us</a>
-                    </li>
-    <div id='google_translate_element'>
-        <script>
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-            
-            pageLanguage: 'en,bg',
-            
-            includedLanguages:'en,bg', 
-            
-            layout: google.translate.TranslateElement.InlineLayout.VERTICAL
-            
-            }, 'google_translate_element');
-        }
-        </script>
-        <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-    </div>
-                <?php
-                    if(isset($_SESSION['username'])) {
-                        echo '
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">'. $_SESSION['username'] .'</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="logout.php">Logout</a>
-                            </li>
-                        </ul>';
-                    } else {
-                        echo '
-                        <div class="navbar-expand-end">
-                            <a class="nav-item nav-link" href="login.php">Log In</a>
-                            <a class="nav-item nav-link" href="register.php">Register</a>
-                        </div>';
-                    }
-                ?>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--Video-->
+    <?php include('navigation.php');?>
+   <!-- Video--> 
     <div class="video">
         <video autoplay muted loop width="100%">
             <source  src="images/intro.mp4" type="video/mp4">
@@ -99,7 +36,7 @@
     <!-- <div class="content">
         <h2>Leading number 1 international agency</h2>
         <a href="aboutus.php">Learn more</a>
-    </div> -->
+    </div>-->
 
     <!--about section -->
     <section id="about" class="about section-padding">
@@ -209,7 +146,7 @@
     </section>
 
     <!--footer-->
-    <footer class="bg-dark p-2 text-center">
+    <footer class="bg-dark p-1 text-center">
         <div class="container">
             <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
         </div>

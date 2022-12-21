@@ -2,10 +2,9 @@
     font-family:'Raleway',sans-serif;
 }
 
-body{
-   background-color: white;
+header{
+    background-color: transparent;
 }
-
 .navbar-nav a{
     font-size: 18px;
     font-style: italic;
@@ -21,11 +20,11 @@ body{
     
 }
 
-.navbar-light{
+/* .navbar-light{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
-}
+} */
 
 
 .w-100{

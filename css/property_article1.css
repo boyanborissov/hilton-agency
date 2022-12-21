@@ -30,6 +30,31 @@
   .navbar-light .navbar-nav .navbar-link{
     color: black;
   }
+  /*google translate Dropdown */
+ 
+ #google_translate_element select{
+  background-color: transparent;
+  color: white;
+  margin-top: 13px;
+  }
+  
+  /*google translate link | logo */
+    .goog-logo-link{
+    display:none!important;
+    }
+  .goog-te-gadget{
+  color:transparent!important;
+  }
+  
+  /* google translate banner-frame */
+  
+  .goog-te-banner-frame{
+  display:none !important;
+  }
+  
+  #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
+ .goog-text-highlight { background: none !important; box-shadow: none !important;}
+  
    img{
     height: 650px;
   }

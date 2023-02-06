@@ -14,7 +14,7 @@
 </head>
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
   <div class="container">
     <a class="navbar-brand" href="home.php"><b>THE HILTON AGENCY</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -168,7 +168,17 @@
           <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
       </div>
   </footer>
+  <script>
+        const nav2 = document.querySelector(".navbar");
 
+        window.addEventListener("scroll", () => {
+            if(window.scrollY >= 700){
+                nav2.classList.add('bg-dark');
+            }else if(window.scrollY < 700){
+                nav2.classList.remove('bg-dark');
+            }
+        })
+    </script>
 	<script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

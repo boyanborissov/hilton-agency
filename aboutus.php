@@ -58,43 +58,26 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <!-- <section id="about">
-      <div class="about-1">
-          <h1>ABOUT US</h1>
+<!--About us-->
+<section id="about">
+      <div class="about-1 text-center mt-5">
+          <h1>Our Story</h1>
+          <hr>
       </div>
       <div id="about-2">
           <div class="content-box-lg">
               <div class="container">
                   <div class="row">
                       <div class="col-md-4">
-                          <div class="about-item text-center">
-                              <i class="fa fa-book"></i>
-                              <h3>MISSION</h3>
-                              <hr>
-                              <p>“Delivering measurable results to clients, employees, and vendors.” “Provide the best customer results possible and deliver the WOW factor through our services.” “Our mission is to be the experts in marketing and sales alignment and the masters of the message</p>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="about-item text-center">
-                              <i class="fa fa-book"></i>
-                              <h3>VISSION</h3>
-                              <hr>
-                              <p>Put simply, your mission statement focuses on today and what you are doing to achieve the promises made. Your agency’s vision focuses on tomorrow and what the goal of the company is.While these are two very different concepts, the line often gets blurred. </p>
-                          </div>
-                      </div>
-                      <div class="col-md-4">
-                          <div class="about-item text-center">
-                              <i class="fa fa-book"></i>
-                              <h3>ACHIEVMENT</h3>
-                              <hr>
-                              <p>When an agency lands a prestigious award, a grant or a big investor, it can be a unique marketing opportunity for the company. Regardless of what the honor or accomplishment is, having the business recognized lends credibility. An agency drive both sales leads and loyalty.</p>
-                          </div>
+                          <div class="about-item">
+                            
                       </div>
                   </div>
               </div>
           </div>
       </div>
-  </section> -->
+      </div>
+  </section>
   <!--footer-->
   <footer class="bg-dark p-2 text-center">
   <div class="container">

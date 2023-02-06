@@ -111,7 +111,7 @@
                 <div class=" card text-light text-center bg-white pb-2 h-100">
                     <div class="card-body text-dark">
                         <div class="img-area mb-4">
-                            <img src="images/la-fin-mansion .jpg" alt="" class="img-fluid">
+                            <a href="properties-read-more.php?id=3"><img src="images/la-fin-mansion .jpg" alt="" class="img-fluid"></a>
                         </div>
                         <h3 class="card-title">La fin</h3>
                         <p class="lead"> La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million.</p>
@@ -123,7 +123,7 @@
                 <div class=" card text-light text-center bg-white pb-2 h-100">
                     <div class="card-body text-dark">
                         <div class="img-area mb-4">
-                            <img src="images/hadid-1.jpg" alt="" class="img-fluid">
+                            <a href="properties-read-more.php?id=6"><img src="images/hadid.jpg" alt="" class="img-fluid"></a>
                         </div>
                         <h3 class="card-title">Le Belvedere</h3>
                         <p class="lead">The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump. </p>
@@ -134,7 +134,7 @@
                     <div class=" card text-light text-center bg-white pb-2 h-100">
                         <div class="card-body text-dark">
                             <div class="img-area mb-4">
-                                <img src="images/manor.jpg" alt="" class="img-fluid">
+                                <a href="properties-read-more.php?id=2"><img src="images/manor.jpg" alt="" class="img-fluid"></a>
                             </div>
                             <h3 class="card-title">Spelling manor</h3>
                             <p class="lead">"The Manor" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.</p>
@@ -144,6 +144,63 @@
             </div>
         </div>
     </section>
+    <!-- <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Exclusive Properties</h2>
+                        <p>Our best properties for your style.</p>
+                    </div>
+                </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+              <div class="card mb-5 shadow-sm h-100">
+
+                <img src="images/lafin1.jpg" class="img-fluid" />
+        
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2>La fin</h2>
+                  </div>
+                  <div class="card-text" style="text-align:justify">
+                    <p> La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million.</p>
+                  </div>
+                </div>
+              </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+              <div class="card mb-5 shadow-sm h-100">
+
+                <img src="images/hadid1.jpg" class="img-fluid" />
+        
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2>La fin</h2>
+                  </div>
+                  <div class="card-text" style="text-align:justify">
+                    <p>The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump. </p>
+                  </div>
+                </div>
+              </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+              <div class="card mb-5 shadow-sm h-100">
+
+                <img src="images/manor-1.jpg" class="img-fluid" />
+        
+                <div class="card-body">
+                  <div class="card-title">
+                    <h2>The Spelling Manor</h2>
+                  </div>
+                  <div class="card-text" style="text-align:justify">
+                    <p> "The Manor" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.</p>
+                  </div>
+                </div>
+              </div>
+    </div>
+            </div>
+        </div>
+    </section> -->
 
     <!--footer-->
     <footer class="bg-dark p-1 text-center">

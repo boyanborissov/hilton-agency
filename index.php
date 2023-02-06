@@ -46,6 +46,7 @@
             echo '
             <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
               <div class="card mb-5 shadow-sm h-100">
+
                 <img src="'. $row['image'].'" class="img-fluid" />
         
                 <div class="card-body">
@@ -55,9 +56,11 @@
                   <div class="card-text" style="text-align:justify">
                     <p>'. $row['description'].'</p>
                   </div>
+                  <div class="card-footer bg-white border-0 text-center">
                   <form method="get" action="properties-read-more.php" class="mx-auto">
-                    <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mx-auto">Read More</button>
+                    <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
                   </form>
+                </div>
                 </div>
               </div>
             </div>';
@@ -76,6 +79,17 @@
       <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
     </div>
   </footer>
+  <script>
+        const nav2 = document.querySelector(".navbar");
+
+        window.addEventListener("scroll", () => {
+            if(window.scrollY >= 50){
+                nav2.classList.add('bg-dark');
+            }else if(window.scrollY < 50){
+                nav2.classList.remove('bg-dark');
+            }
+        })
+    </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>

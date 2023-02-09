@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2022 at 12:01 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: Feb 09, 2023 at 07:27 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 8.0.13
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -64,7 +64,7 @@ CREATE TABLE `blog_article` (
 --
 
 INSERT INTO `blog_article` (`id`, `image`, `title`, `meta_content`, `description`) VALUES
-(1, 'images\\manor.jpg', 'Legendary Spelling Manor Estate In Los Angeles Lists For $165 Million', 'Posted on January 1, 2022 by Boyan Borisov', 'The last time the Spelling Manor changed hands was in 2019, when it sold to an undisclosed buyer for $119.75 million—the highest recorded residential sale ever for Los Angeles County at the time.Still, the $165-million sticker price ranks as one of the highest in the country for a single-family residence.Prior to the record sale in 2019, the home was owned by Formula One heiress Petra Ecclestone, who had paid $85 million for the place in an all-cash deal.Covering well over an acre of livable space, the home features 27 bathrooms and 14 bedrooms, including the 7,500-square-foot primary suite.In an interview with Forbes last year, Ecclestone’s partner, real estate agent and lifestyle entrepreneur Sam Palmer, revealed that the 123-room, W-shaped mansion requires a staff of 50 people to keep the estate in working order.'),
+(1, 'images\\manor.jpg', 'Legendary Spelling Manor Estate In Los Angeles Lists For $165 Million', 'Posted on January 1, 2022 by Boyan Borisov', '<p class=\"fs-5 mb-4\">The last time the Spelling Manor changed hands was in 2019, when it sold to an undisclosed buyer for $119.75 million—the highest recorded residential sale ever for Los Angeles County at the time.\r\n						Fast-forward three years and the famed estate’s current price of $165 million wouldn’t come close to breaking the new California record set a year ago when venture capitalist Marc Andreessen paid $177 million for a property in Malibu.</p>\r\n<p class=\"fs-5 mb-4\">Still, the $165-million sticker price ranks as one of the highest in the country for a single-family residence.\r\n						Weighing in at more than 56,000 square feet, the French chateau-inspired estate was originally built for late TV producer Aaron Spelling and his widow, Candy Spelling. Sparing no expense, Candy Spelling customized the sprawling residence with a range of personalized amenity rooms, including a flower-cutting room, a film editing area behind the screen of the home’s movie theater and a wine and cheese room outfitted with Parisian-cafe style tables and chairs.\r\n						</p>\r\n<p class=\"fs-5 mb-4\">Prior to the record sale in 2019, the home was owned by Formula One heiress Petra Ecclestone, who had paid $85 million for the place in an all-cash deal.\r\n						During her residency, Ecclestone oversaw sweeping renovations, updating interiors to suit modern tastes and adding a beauty salon, an aquarium and a nightclub.</p>\r\n<h2 class=\"fw-bolder mb-4 mt-5\">About the manor</h2>\r\n<p class=\"fs-5 mb-4\">Covering well over an acre of livable space, the home features 27 bathrooms and 14 bedrooms, including the 7,500-square-foot primary suite.\r\n						Other points of interest include a French-door solarium, a formal dining room and a grand foyer featuring a 30-foot ceiling, as well as a game room, a bowling alley and a tanning room.\r\n						</p>\r\n<p class=\"fs-5 mb-4\">In an interview with Forbes last year, Ecclestone’s partner, real estate agent and lifestyle entrepreneur Sam Palmer, revealed that the 123-room, W-shaped mansion requires a staff of 50 people to keep the estate in working order.\r\n						A team of landscapers tends to grounds featuring rose gardens, citrus orchards and acres of lawn. In addition, the home’s many fountains, the statuary, koi ponds, swimming pool and sports courts all require regular maintenance.</p>'),
 (2, 'images\\177 million.jpg', 'Billionaire Marc Andreessen buys Malibu mansion for $177 million, a California record', 'Posted on January 1, 2022 by Boyan Borisov', 'In a historic deal, billionaire venture capitalist Marc Andreessen has paid $177 million for a sprawling estate in Malibu. It’s the most ever paid for a home in California, shattering the previous record set by Jeff Bezos last year.The property makes the most of its space, squeezing in multiple guesthouses, guard houses, a swimming pool and box garden. Perched at the edge of the property, the main house designed by Scott Mitchell overlooks the ocean from multiple patios and terraces. A winding path descends to the beach.'),
 (3, 'images\\hadid_estate.jpg', 'Mohamed Hadid’s Bel-Air mega-mansion is set for auction, then demolition', 'Posted on January 1, 2022 by Boyan Borisov', '?This house will last forever,? developer Mohamed Hadid once said about his 30,000-square-foot mega-mansion perched in the hills of Bel-Air. ?Bel-Air will fall before this will.?They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.'),
 (4, 'images\\kanye-mansion2.jpeg', 'Kanye West Buys House Across the Street From Kim Kardashian', 'Posted on January 1, 2022 by Boyan Borisov', 'Kanye West seems to be acknowledging he can\'t pull his marriage out of the fire, so he\'s reportedly moving a stone\'s throw from his former family home ... presumably, so he can effectively co-parent with Kim.\r\n\r\nKanye bought a $4.5 million home across the street from his estranged wife ... so says the Daily Mail. The home is just over 3,650 square feet, with 5 bedrooms. He reportedly paid $421,000 over asking ... proof the real estate bidding war in SoCal is alive and well.\r\n\r\nAs we reported, Kanye gave Kim his interest in the family home ... a home Kanye designed over a period of years. TMZ broke the story, there are still some property issues that remain unsettled, so Kim has asked the judge to grant her the divorce now, and leave the other issues for later down the road.'),
@@ -137,10 +137,10 @@ CREATE TABLE `property_article` (
 INSERT INTO `property_article` (`id`, `image`, `image2`, `image3`, `image4`, `image5`) VALUES
 (1, 'images/birdview.jpg', 'images/Casa-Encantada-3.jpg', 'images/Casa-Encantada-4.jpg', 'images/Casa-Encantada-5.jpg', 'images/Casa-Encantada-7.jpg'),
 (2, 'images/manor.jpg', 'images/manor-1.jpg', 'images/manor-2.jpg', 'images/manor-3.jpg', 'images/manor-4.jpg'),
-(3, 'images/la-fin-mansion .jpg', 'images/la-fin-2.jpg', 'images/la-fin-3.jpg', 'images/la-fin-4.jpg', 'images/la-fin-5.jpg'),
+(3, 'images/lafin1.jpg', 'images/lafin2.jpg', 'images/lafin3.jpg', 'images/lafin4.jpg', 'images/lafin5.jpg'),
 (4, 'images/the-one-2.jpg', 'images/the-one-1.jpg', 'images/the-one-3.jpg', 'images/the-one-4.jpg', 'images/the-one-5.jpg'),
-(5, 'images/bel_air.jpg', 'images/bel-air-2.jpg', 'images/bel-air-3.jpg', 'images/bel-air-4.jpg', 'images/bel-air-5.jpg'),
-(6, 'images/hadid-1.jpg', 'images/hadid-2.jpg', 'images/hadid-3.jpg', 'images/hadid-4.jpg', 'images/hadid-5.jpg');
+(5, 'images/bel_air.jpg', 'images/Chartwell2.png', 'images/Chartwell3.jpg', 'images/Chartwell4.jpg', 'images/Chartwell5.jpg'),
+(6, 'images/hadid.jpg', 'images/hadid2.jpg', 'images/hadid3.jpg', 'images/hadid4.jpg', 'images/hadid5.jpg');
 
 -- --------------------------------------------------------
 
@@ -151,6 +151,7 @@ INSERT INTO `property_article` (`id`, `image`, `image2`, `image3`, `image4`, `im
 CREATE TABLE `property_description` (
   `id` int(11) NOT NULL,
   `name` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
+  `location` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
   `address` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
   `beds` int(11) DEFAULT NULL,
   `baths` int(11) DEFAULT NULL,
@@ -163,13 +164,13 @@ CREATE TABLE `property_description` (
 -- Dumping data for table `property_description`
 --
 
-INSERT INTO `property_description` (`id`, `name`, `address`, `beds`, `baths`, `size`, `price`, `description`) VALUES
-(1, 'Casa Encantada', 'BEL AIR CA 90077', 8, 12, 40000, '200,000,000', '<p class=\"fs-5 mb-4\">Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. \r\n                                Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.</p>\r\n<p class=\"fs-5 mb-4\">Furnishings and interior designs were created by the iconic T.H. Robsjohn- Gibbings, setting a new standard for lavish home design.\r\n                                 With no neighbors and surrounded by the fairways of the Bel-Air Country Club golf course, the compound is expansive, private and secure and is less than ten minutes to Rodeo Drive.\r\n                                </p>\r\n<p class=\"fs-5 mb-4\">Once owned by Conrad Hilton, the hotel magnate hosted some of the most significant social, charitable and political events in the country and over its storied history has been host to several Presidential Dinners. \r\n                                Hilton described the home as an ?object of symmetry and beauty.? As a 30 year resident, it was from Casa Encantada where he grew the brand into the world’s first global hotel chain.</p>\r\n<p class=\"fs-5 mb-4\">With a seemingly impossible intimate feeling, the estate welcomes guests with curved iron gates that swing gracefully from stone bases. \r\n                                The sweeping driveway guides through lush, green surroundings to lead visitors into the warm embrace of the main residence.\r\n                                 The dramatic entry hall leads with 18-foot ceilings that open into a majestic reception hall, dining room, walnut paneled library, living room and family room. \r\n                                The home’s second story features living quarters that perfectly juxtapose the residence’s entertainment-centric first story.</p>\r\n<p class=\"fs-5 mb-4\">An architectural pool house boasts a professional screening room, formal bar, and vistas to the rose gardens and beyond. \r\n                                A north-south lighted tennis court and separately constructed basketball court, full guest house, greenhouses, and house manager’s quarters along with koi ponds and irreplaceable landscaping makes this arguably one of the finest estates in the world.</p>'),
-(2, 'Spelling Manor', '594 S Mapleton Dr CA 90024', 14, 27, 56000, '165,000,000', NULL),
-(3, 'La Fin', '1200 Bel Air Road', 12, 18, 38000, '139,000,000', NULL),
-(4, 'The One', '944 Airole Way', 21, 42, 105000, '265,000,000', NULL),
-(5, 'The Chartwell Estate', '750 Bel Air Rd', 10, 16, 22000, '195,000,000', NULL),
-(6, 'Le Belvedere', '630 Nimes Rd', 10, 14, 40000, '85,000,000', NULL);
+INSERT INTO `property_description` (`id`, `name`, `location`, `address`, `beds`, `baths`, `size`, `price`, `description`) VALUES
+(1, 'Casa Encantada', 'Bel Air', 'BEL AIR CA 90077', 8, 12, 40000, '200,000,000', '<p class=\"fs-5 mb-4\">Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. \r\n                                Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.</p>\r\n<p class=\"fs-5 mb-4\">Furnishings and interior designs were created by the iconic T.H. Robsjohn- Gibbings, setting a new standard for lavish home design.\r\n                                 With no neighbors and surrounded by the fairways of the Bel-Air Country Club golf course, the compound is expansive, private and secure and is less than ten minutes to Rodeo Drive.\r\n                                </p>\r\n<p class=\"fs-5 mb-4\">Once owned by Conrad Hilton, the hotel magnate hosted some of the most significant social, charitable and political events in the country and over its storied history has been host to several Presidential Dinners. \r\n                                Hilton described the home as an ?object of symmetry and beauty.? As a 30 year resident, it was from Casa Encantada where he grew the brand into the world’s first global hotel chain.</p>\r\n<p class=\"fs-5 mb-4\">With a seemingly impossible intimate feeling, the estate welcomes guests with curved iron gates that swing gracefully from stone bases. \r\n                                The sweeping driveway guides through lush, green surroundings to lead visitors into the warm embrace of the main residence.\r\n                                 The dramatic entry hall leads with 18-foot ceilings that open into a majestic reception hall, dining room, walnut paneled library, living room and family room. \r\n                                The home’s second story features living quarters that perfectly juxtapose the residence’s entertainment-centric first story.</p>\r\n<p class=\"fs-5 mb-4\">An architectural pool house boasts a professional screening room, formal bar, and vistas to the rose gardens and beyond. \r\n                                A north-south lighted tennis court and separately constructed basketball court, full guest house, greenhouses, and house manager’s quarters along with koi ponds and irreplaceable landscaping makes this arguably one of the finest estates in the world.</p>'),
+(2, 'Spelling Manor', 'Holmbly Hills', '594 S Mapleton Dr CA 90024', 14, 27, 56000, '165,000,000', NULL),
+(3, 'La Fin', 'Bel Air', '1200 Bel Air Road', 12, 18, 38000, '139,000,000', NULL),
+(4, 'The One', 'Beverlly Hills', '944 Airole Way', 21, 42, 105000, '265,000,000', NULL),
+(5, 'The Chartwell Estate', 'Hollmbly Hills', '750 Bel Air Rd', 10, 16, 22000, '195,000,000', NULL),
+(6, 'Le Belvedere', 'Beverlly Hills', '630 Nimes Rd', 10, 14, 40000, '85,000,000', NULL);
 
 -- --------------------------------------------------------
 
@@ -191,10 +192,10 @@ CREATE TABLE `property_info` (
 INSERT INTO `property_info` (`id`, `image`, `title`, `description`) VALUES
 (1, 'images/Casa-Encantada-3.jpg', 'Casa Encantada', 'Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.'),
 (2, 'images/manor.jpg', 'The Spelling Manor', '\"The Manor\" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.'),
-(3, 'images/la-fin-mansion .jpg', 'La fin', 'In Los Angeles, where luxury comes with the territory, La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million. '),
+(3, 'images/lafin1.jpg', 'La fin', 'In Los Angeles, where luxury comes with the territory, La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million. '),
 (4, 'images/the-one-2.jpg', 'The One', 'Nigh on ten years later, the property remains unfinished. By early 2021, the long-delayed project was preparing to hit the market with a much-reduced $340 million ask. By the time it actually entered the ring, that figure had been chopped even further, down to $295 million. And at $126 million, the final sale price represents an eye-popping 57% discount off the already hugely reduced list.'),
 (5, 'images/bel_air.jpg', 'The Chartwell Estate', 'The $195 million Chartwell Estate is the most expensive U.S. residential listing that\'s on a multiple listing service. The property in the Bel Air neighborhood of Los Angeles was home to billionaire media mogul Jerry Perenchio, one-time Univision chairman and CEO, who died in 2017.'),
-(6, 'images/hadid-1.jpg', 'Le Belvedere', 'The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump, has been put on the market for $85 million. While Hadid developed and resides in the luxury residence, he is not its current owner. After finishing work on the mansion, Hadid sold it to international owners for $50 million back in 2010. ');
+(6, 'images/hadid.jpg', 'Le Belvedere', 'The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump, has been put on the market for $85 million. While Hadid developed and resides in the luxury residence, he is not its current owner. After finishing work on the mansion, Hadid sold it to international owners for $50 million back in 2010. ');
 
 -- --------------------------------------------------------
 
@@ -221,7 +222,8 @@ INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
 (6, 'nikola', 'nikola@gmail.com', 'nikola1234'),
 (7, 'AtanasVassilev', 'vassilevatanas@gmail.com', '123456789'),
 (8, 'emko', 'emo@gmail.com', 'asdfghjk'),
-(9, 'ickoo', 'ickoo@gmail.com', '12345678');
+(9, 'ickoo', 'ickoo@gmail.com', '12345678'),
+(10, 'ivan2023', 'ivan2023@gmail.com', '12345678');
 
 --
 -- Indexes for dumped tables
@@ -325,7 +327,7 @@ ALTER TABLE `property_info`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

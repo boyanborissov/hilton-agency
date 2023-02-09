@@ -66,12 +66,14 @@ font-size: 30px;
 }
  /*google translate Dropdown */
  
+
+
  #google_translate_element select{
     background-color: transparent;
     color: white;
-    margin-top: 18px;
+    margin-top: 13px;
     }
-    
+  
     /*google translate link | logo */
       .goog-logo-link{
       display:none!important;
@@ -80,17 +82,18 @@ font-size: 30px;
     color:transparent!important;
     }
     
-    /* google translate banner-frame */
-    
     .goog-te-banner-frame{
-    display:none !important;
-    }
-    
+        display:none !important;
+        }
+  
     #goog-gt-tt, .goog-te-balloon-frame{display: none !important;}
    .goog-text-highlight { background: none !important; box-shadow: none !important;}
-    
-    body{top:0!important;}
-
+   #google_translate_element span{
+    display:none!important;
+   }
+   .skiptranslate iframe{
+    display:none !important;
+   }
     #myBtn {
         display: none;
         position: fixed;

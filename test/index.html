@@ -32,12 +32,13 @@
           </span>
           <label class="form-label" for="rangePrice"></label>
           <div class="range">
-            <input type="range" class="form-range" id="rangePrice" min="0" max="200" step="25" value="100"/>
+            <input type="range" class="form-range" min="85" max="265" step="10" value="175" id="slider"/>
+            <p class="text-center"><span id="price"></span> million$</p>
           </div>
             <div>
               <ul>
-                <li>1$</li>
-                <li>2$</li>
+                <li>85 million$</li>
+                <li>265 million$</li>
               </ul>
             </div>
           </div>
@@ -200,6 +201,15 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+let slider = document.getElementById("slider");
+let price = document.getElementById("price");
+price.innerHTML = slider.value;
+slider.onchange = function(event){
+  price.innerHTML = this.value;
+  
+}
 </script>
+
 </body>
 </html>

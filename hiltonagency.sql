@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 09, 2023 at 07:27 PM
+-- Generation Time: Mar 04, 2023 at 09:45 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -190,7 +190,7 @@ CREATE TABLE `property_info` (
 --
 
 INSERT INTO `property_info` (`id`, `image`, `title`, `description`) VALUES
-(1, 'images/Casa-Encantada-3.jpg', 'Casa Encantada', 'Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.'),
+(1, 'images/Casa-Encantada-3.jpg', 'Casa Encantada', 'Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. '),
 (2, 'images/manor.jpg', 'The Spelling Manor', '\"The Manor\" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.'),
 (3, 'images/lafin1.jpg', 'La fin', 'In Los Angeles, where luxury comes with the territory, La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million. '),
 (4, 'images/the-one-2.jpg', 'The One', 'Nigh on ten years later, the property remains unfinished. By early 2021, the long-delayed project was preparing to hit the market with a much-reduced $340 million ask. By the time it actually entered the ring, that figure had been chopped even further, down to $295 million. And at $126 million, the final sale price represents an eye-popping 57% discount off the already hugely reduced list.'),

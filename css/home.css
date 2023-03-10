@@ -158,3 +158,9 @@ font-size: 30px;
         text-align: center;
     } */
 }
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+  }

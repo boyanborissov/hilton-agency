@@ -28,7 +28,6 @@ body{
 #fs_price_body ul li{
     list-style: none;
     display: inline-block;
-    color: #d4d4d4;
 }
 #fs_price_body ul li:last-child{
     float: right;

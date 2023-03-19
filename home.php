@@ -11,14 +11,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/home.css?php echo time();?>">
+  <link rel="stylesheet" href="css/home.css?<?php echo time();?>">
 </head>
 <body onload="video()">
     <!--Navbar-->
     <?php include('navigation.php');?>
    <!-- Video--> 
     <div class="video">
-        <video autoplay muted loop width="100%">
+        <video class="w-100" autoplay muted loop>
             <source  src="images/intro.mp4" type="video/mp4">
         </video>  
     </div>

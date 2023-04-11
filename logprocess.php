@@ -24,15 +24,25 @@
 
         for($i = 0; $i < count($data); $i++){
             $currentRow = $data[$i];
+            $id = $currentRow["id"];
             $username = $currentRow["username"];
             $email = $currentRow["email"];
             $password = $currentRow["password"];
+            $role = $currentRow["role"];
 
             if ($logMail == $email && $logPass == $password) {
                 unset($_SESSION["loginSuccess"]);
                 $_SESSION["loginSuccess"] = "loginSuccess";
-                unset($_SESSION["username"]);
-                $_SESSION["username"] = $username;
+
+                unset($_SESSION["loggedUserID"]);
+                $_SESSION["loggedUserID"] = $id;
+
+                unset($_SESSION["loggedUser"]);
+                $_SESSION["loggedUser"] = $username;
+
+                unset($_SESSION["loggedUserRole"]);
+                $_SESSION["loggedUserRole"] = $role;
+
                 header("Location: home.php");
                 die();
             }

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 04, 2023 at 09:45 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.0.13
+-- Erstellungszeit: 11. Apr 2023 um 23:14
+-- Server-Version: 10.4.27-MariaDB
+-- PHP-Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,25 +18,25 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `hiltonagency`
+-- Datenbank: `hiltonagency`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `agents`
+-- Tabellenstruktur für Tabelle `agents`
 --
 
 CREATE TABLE `agents` (
   `id` int(11) NOT NULL,
-  `image` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `position` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `fullname` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `description` text COLLATE armscii8_bin DEFAULT NULL
+  `image` varchar(50) DEFAULT NULL,
+  `position` varchar(50) DEFAULT NULL,
+  `fullname` varchar(50) DEFAULT NULL,
+  `description` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `agents`
+-- Daten für Tabelle `agents`
 --
 
 INSERT INTO `agents` (`id`, `image`, `position`, `fullname`, `description`) VALUES
@@ -48,22 +48,22 @@ INSERT INTO `agents` (`id`, `image`, `position`, `fullname`, `description`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_article`
+-- Tabellenstruktur für Tabelle `blog_article`
 --
 
 CREATE TABLE `blog_article` (
   `id` int(11) NOT NULL,
-  `image` varchar(255) COLLATE armscii8_bin DEFAULT NULL,
-  `title` varchar(255) COLLATE armscii8_bin DEFAULT NULL,
-  `meta_content` varchar(255) COLLATE armscii8_bin DEFAULT NULL,
-  `description` longtext COLLATE armscii8_bin DEFAULT NULL
+  `image` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `date` varchar(255) DEFAULT NULL,
+  `description` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `blog_article`
+-- Daten für Tabelle `blog_article`
 --
 
-INSERT INTO `blog_article` (`id`, `image`, `title`, `meta_content`, `description`) VALUES
+INSERT INTO `blog_article` (`id`, `image`, `title`, `date`, `description`) VALUES
 (1, 'images\\manor.jpg', 'Legendary Spelling Manor Estate In Los Angeles Lists For $165 Million', 'Posted on January 1, 2022 by Boyan Borisov', '<p class=\"fs-5 mb-4\">The last time the Spelling Manor changed hands was in 2019, when it sold to an undisclosed buyer for $119.75 million—the highest recorded residential sale ever for Los Angeles County at the time.\r\n						Fast-forward three years and the famed estate’s current price of $165 million wouldn’t come close to breaking the new California record set a year ago when venture capitalist Marc Andreessen paid $177 million for a property in Malibu.</p>\r\n<p class=\"fs-5 mb-4\">Still, the $165-million sticker price ranks as one of the highest in the country for a single-family residence.\r\n						Weighing in at more than 56,000 square feet, the French chateau-inspired estate was originally built for late TV producer Aaron Spelling and his widow, Candy Spelling. Sparing no expense, Candy Spelling customized the sprawling residence with a range of personalized amenity rooms, including a flower-cutting room, a film editing area behind the screen of the home’s movie theater and a wine and cheese room outfitted with Parisian-cafe style tables and chairs.\r\n						</p>\r\n<p class=\"fs-5 mb-4\">Prior to the record sale in 2019, the home was owned by Formula One heiress Petra Ecclestone, who had paid $85 million for the place in an all-cash deal.\r\n						During her residency, Ecclestone oversaw sweeping renovations, updating interiors to suit modern tastes and adding a beauty salon, an aquarium and a nightclub.</p>\r\n<h2 class=\"fw-bolder mb-4 mt-5\">About the manor</h2>\r\n<p class=\"fs-5 mb-4\">Covering well over an acre of livable space, the home features 27 bathrooms and 14 bedrooms, including the 7,500-square-foot primary suite.\r\n						Other points of interest include a French-door solarium, a formal dining room and a grand foyer featuring a 30-foot ceiling, as well as a game room, a bowling alley and a tanning room.\r\n						</p>\r\n<p class=\"fs-5 mb-4\">In an interview with Forbes last year, Ecclestone’s partner, real estate agent and lifestyle entrepreneur Sam Palmer, revealed that the 123-room, W-shaped mansion requires a staff of 50 people to keep the estate in working order.\r\n						A team of landscapers tends to grounds featuring rose gardens, citrus orchards and acres of lawn. In addition, the home’s many fountains, the statuary, koi ponds, swimming pool and sports courts all require regular maintenance.</p>'),
 (2, 'images\\177 million.jpg', 'Billionaire Marc Andreessen buys Malibu mansion for $177 million, a California record', 'Posted on January 1, 2022 by Boyan Borisov', 'In a historic deal, billionaire venture capitalist Marc Andreessen has paid $177 million for a sprawling estate in Malibu. It’s the most ever paid for a home in California, shattering the previous record set by Jeff Bezos last year.The property makes the most of its space, squeezing in multiple guesthouses, guard houses, a swimming pool and box garden. Perched at the edge of the property, the main house designed by Scott Mitchell overlooks the ocean from multiple patios and terraces. A winding path descends to the beach.'),
 (3, 'images\\hadid_estate.jpg', 'Mohamed Hadid’s Bel-Air mega-mansion is set for auction, then demolition', 'Posted on January 1, 2022 by Boyan Borisov', '?This house will last forever,? developer Mohamed Hadid once said about his 30,000-square-foot mega-mansion perched in the hills of Bel-Air. ?Bel-Air will fall before this will.?They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.They sued Hadid in 2018, citing construction violations. In December 2019, Los Angeles County Superior Court Judge Craig D. Karlan ordered it to be torn down because of an inadequate foundation.'),
@@ -74,42 +74,63 @@ INSERT INTO `blog_article` (`id`, `image`, `title`, `meta_content`, `description
 -- --------------------------------------------------------
 
 --
--- Table structure for table `blog_info`
+-- Tabellenstruktur für Tabelle `blog_card`
 --
 
-CREATE TABLE `blog_info` (
+CREATE TABLE `blog_card` (
   `id` int(11) NOT NULL,
-  `image` varchar(50) COLLATE armscii8_bin NOT NULL DEFAULT '',
-  `title` text COLLATE armscii8_bin NOT NULL,
-  `description` text COLLATE armscii8_bin NOT NULL
+  `image` varchar(50) NOT NULL DEFAULT '',
+  `title` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `blog_info`
+-- Daten für Tabelle `blog_card`
 --
 
-INSERT INTO `blog_info` (`id`, `image`, `title`, `description`) VALUES
-(1, 'images\\manor.jpg', 'Legendary Spelling Manor Estate In Los Angeles Lists For $165 Million', ''),
-(2, 'images\\177 million.jpg', 'Billionaire Marc Andreessen buys Malibu mansion for $177 million, a California record', ''),
-(3, 'images\\hadid_estate.jpg', 'Mohamed Hadid’s Bel-Air mega-mansion is set for auction, then demolition', ''),
-(4, 'images\\kanye-mansion2.jpeg', 'Kanye West Buys House Across the Street From Kim Kardashian', ''),
-(5, 'images\\theembassy.jpeg', 'Drake Wants You Inside His Toronto Mega-Mansion, and Hopes You’ll Splurge on Merch While Visiting', ''),
-(6, 'images\\bernauld.jpg', 'Did Bernard Arnault Sell an $84 Million Trousdale Estates Mansion… to Himself?', '');
+INSERT INTO `blog_card` (`id`, `image`, `title`) VALUES
+(1, 'images\\manor.jpg', 'Legendary Spelling Manor Estate In Los Angeles Lists For $165 Million'),
+(2, 'images\\177 million.jpg', 'Billionaire Marc Andreessen buys Malibu mansion for $177 million, a California record'),
+(3, 'images\\hadid_estate.jpg', 'Mohamed Hadid’s Bel-Air mega-mansion is set for auction, then demolition'),
+(4, 'images\\kanye-mansion2.jpeg', 'Kanye West Buys House Across the Street From Kim Kardashian'),
+(5, 'images\\theembassy.jpeg', 'Drake Wants You Inside His Toronto Mega-Mansion, and Hopes You’ll Splurge on Merch While Visiting'),
+(6, 'images\\bernauld.jpg', 'Did Bernard Arnault Sell an $84 Million Trousdale Estates Mansion… to Himself?');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `home_page`
+-- Tabellenstruktur für Tabelle `contact_form`
+--
+
+CREATE TABLE `contact_form` (
+  `id` int(11) NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `message` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Daten für Tabelle `contact_form`
+--
+
+INSERT INTO `contact_form` (`id`, `name`, `email`, `message`) VALUES
+(1, 'Boyan', 'boyborissov@gmail.com', 'Boyanski'),
+(2, 'Boyan', 'boyborissov@gmail.com', 'Boyanski 12334324234234'),
+(3, 'Boyan', 'boyborissov@gmail.com', 'Hi!');
+
+-- --------------------------------------------------------
+
+--
+-- Tabellenstruktur für Tabelle `home_page`
 --
 
 CREATE TABLE `home_page` (
   `id` int(11) NOT NULL,
-  `image` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `description` text COLLATE armscii8_bin DEFAULT NULL
+  `image` varchar(50) DEFAULT NULL,
+  `description` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `home_page`
+-- Daten für Tabelle `home_page`
 --
 
 INSERT INTO `home_page` (`id`, `image`, `description`) VALUES
@@ -118,23 +139,23 @@ INSERT INTO `home_page` (`id`, `image`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `property_article`
+-- Tabellenstruktur für Tabelle `property_article`
 --
 
 CREATE TABLE `property_article` (
   `id` int(11) NOT NULL,
-  `image` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `image2` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `image3` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `image4` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `image5` varchar(50) COLLATE armscii8_bin DEFAULT NULL
+  `image1` varchar(50) DEFAULT NULL,
+  `image2` varchar(50) DEFAULT NULL,
+  `image3` varchar(50) DEFAULT NULL,
+  `image4` varchar(50) DEFAULT NULL,
+  `image5` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `property_article`
+-- Daten für Tabelle `property_article`
 --
 
-INSERT INTO `property_article` (`id`, `image`, `image2`, `image3`, `image4`, `image5`) VALUES
+INSERT INTO `property_article` (`id`, `image1`, `image2`, `image3`, `image4`, `image5`) VALUES
 (1, 'images/birdview.jpg', 'images/Casa-Encantada-3.jpg', 'images/Casa-Encantada-4.jpg', 'images/Casa-Encantada-5.jpg', 'images/Casa-Encantada-7.jpg'),
 (2, 'images/manor.jpg', 'images/manor-1.jpg', 'images/manor-2.jpg', 'images/manor-3.jpg', 'images/manor-4.jpg'),
 (3, 'images/lafin1.jpg', 'images/lafin2.jpg', 'images/lafin3.jpg', 'images/lafin4.jpg', 'images/lafin5.jpg'),
@@ -145,189 +166,164 @@ INSERT INTO `property_article` (`id`, `image`, `image2`, `image3`, `image4`, `im
 -- --------------------------------------------------------
 
 --
--- Table structure for table `property_description`
+-- Tabellenstruktur für Tabelle `property_description`
 --
 
 CREATE TABLE `property_description` (
   `id` int(11) NOT NULL,
-  `name` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `location` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `address` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `location` varchar(50) DEFAULT NULL,
+  `address` varchar(50) DEFAULT NULL,
   `beds` int(11) DEFAULT NULL,
   `baths` int(11) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
-  `price` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `description` longtext COLLATE armscii8_bin DEFAULT NULL
+  `price` varchar(50) DEFAULT NULL,
+  `description` longtext DEFAULT NULL,
+  `main_image` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `property_description`
+-- Daten für Tabelle `property_description`
 --
 
-INSERT INTO `property_description` (`id`, `name`, `location`, `address`, `beds`, `baths`, `size`, `price`, `description`) VALUES
-(1, 'Casa Encantada', 'Bel Air', 'BEL AIR CA 90077', 8, 12, 40000, '200,000,000', '<p class=\"fs-5 mb-4\">Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. \r\n                                Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.</p>\r\n<p class=\"fs-5 mb-4\">Furnishings and interior designs were created by the iconic T.H. Robsjohn- Gibbings, setting a new standard for lavish home design.\r\n                                 With no neighbors and surrounded by the fairways of the Bel-Air Country Club golf course, the compound is expansive, private and secure and is less than ten minutes to Rodeo Drive.\r\n                                </p>\r\n<p class=\"fs-5 mb-4\">Once owned by Conrad Hilton, the hotel magnate hosted some of the most significant social, charitable and political events in the country and over its storied history has been host to several Presidential Dinners. \r\n                                Hilton described the home as an ?object of symmetry and beauty.? As a 30 year resident, it was from Casa Encantada where he grew the brand into the world’s first global hotel chain.</p>\r\n<p class=\"fs-5 mb-4\">With a seemingly impossible intimate feeling, the estate welcomes guests with curved iron gates that swing gracefully from stone bases. \r\n                                The sweeping driveway guides through lush, green surroundings to lead visitors into the warm embrace of the main residence.\r\n                                 The dramatic entry hall leads with 18-foot ceilings that open into a majestic reception hall, dining room, walnut paneled library, living room and family room. \r\n                                The home’s second story features living quarters that perfectly juxtapose the residence’s entertainment-centric first story.</p>\r\n<p class=\"fs-5 mb-4\">An architectural pool house boasts a professional screening room, formal bar, and vistas to the rose gardens and beyond. \r\n                                A north-south lighted tennis court and separately constructed basketball court, full guest house, greenhouses, and house manager’s quarters along with koi ponds and irreplaceable landscaping makes this arguably one of the finest estates in the world.</p>'),
-(2, 'Spelling Manor', 'Holmbly Hills', '594 S Mapleton Dr CA 90024', 14, 27, 56000, '165,000,000', NULL),
-(3, 'La Fin', 'Bel Air', '1200 Bel Air Road', 12, 18, 38000, '139,000,000', NULL),
-(4, 'The One', 'Beverlly Hills', '944 Airole Way', 21, 42, 105000, '265,000,000', NULL),
-(5, 'The Chartwell Estate', 'Hollmbly Hills', '750 Bel Air Rd', 10, 16, 22000, '195,000,000', NULL),
-(6, 'Le Belvedere', 'Beverlly Hills', '630 Nimes Rd', 10, 14, 40000, '85,000,000', NULL);
+INSERT INTO `property_description` (`id`, `name`, `location`, `address`, `beds`, `baths`, `size`, `price`, `description`, `main_image`) VALUES
+(1, 'Casa Encantada', 'Bel Air', 'BEL AIR', 8, 12, 40000, '200,000,000', '<p class=\"fs-5 mb-4\">Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. \r\n                                Architect James E. Dolena designed the estate in the shape of an H to provide city, ocean and garden views from all 60 of its rooms.</p>\r\n<p class=\"fs-5 mb-4\">Furnishings and interior designs were created by the iconic T.H. Robsjohn- Gibbings, setting a new standard for lavish home design.\r\n                                 With no neighbors and surrounded by the fairways of the Bel-Air Country Club golf course, the compound is expansive, private and secure and is less than ten minutes to Rodeo Drive.\r\n                                </p>\r\n<p class=\"fs-5 mb-4\">Once owned by Conrad Hilton, the hotel magnate hosted some of the most significant social, charitable and political events in the country and over its storied history has been host to several Presidential Dinners. \r\n                                Hilton described the home as an ?object of symmetry and beauty.? As a 30 year resident, it was from Casa Encantada where he grew the brand into the world’s first global hotel chain.</p>\r\n<p class=\"fs-5 mb-4\">With a seemingly impossible intimate feeling, the estate welcomes guests with curved iron gates that swing gracefully from stone bases. \r\n                                The sweeping driveway guides through lush, green surroundings to lead visitors into the warm embrace of the main residence.\r\n                                 The dramatic entry hall leads with 18-foot ceilings that open into a majestic reception hall, dining room, walnut paneled library, living room and family room. \r\n                                The home’s second story features living quarters that perfectly juxtapose the residence’s entertainment-centric first story.</p>\r\n<p class=\"fs-5 mb-4\">An architectural pool house boasts a professional screening room, formal bar, and vistas to the rose gardens and beyond. \r\n                                A north-south lighted tennis court and separately constructed basketball court, full guest house, greenhouses, and house manager’s quarters along with koi ponds and irreplaceable landscaping makes this arguably one of the finest estates in the world.</p>', 'images/Casa-Encantada-3.jpg'),
+(2, 'Spelling Manor', 'Holmbly Hills', '594 S Mapleton Dr\r\n', 14, 27, 56000, '165,000,000', NULL, 'images/manor.jpg'),
+(3, 'La Fin', 'Bel Air', '1200 Bel Air Road', 12, 18, 38000, '139,000,000', NULL, 'images/lafin1.jpg'),
+(4, 'The One', 'Beverly Hills', '944 Airole Way', 21, 42, 105000, '265,000,000', NULL, 'images/the-one-2.jpg'),
+(5, 'The Chartwell Estate', 'Hollmbly Hills', '750 Bel Air Rd', 10, 16, 22000, '195,000,000', NULL, 'images/bel_air.jpg'),
+(6, 'Le Belvedere', 'Beverly Hills', '630 Nimes Rd', 10, 14, 40000, '85,000,000', NULL, 'images/hadid.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `property_info`
---
-
-CREATE TABLE `property_info` (
-  `id` int(11) NOT NULL,
-  `image` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `title` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `description` text COLLATE armscii8_bin DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
-
---
--- Dumping data for table `property_info`
---
-
-INSERT INTO `property_info` (`id`, `image`, `title`, `description`) VALUES
-(1, 'images/Casa-Encantada-3.jpg', 'Casa Encantada', 'Completed in 1937, this modern Georgian masterpiece is elegantly perched on its own eight plus acre promontory in Bel-Air. '),
-(2, 'images/manor.jpg', 'The Spelling Manor', '\"The Manor\" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.'),
-(3, 'images/lafin1.jpg', 'La fin', 'In Los Angeles, where luxury comes with the territory, La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million. '),
-(4, 'images/the-one-2.jpg', 'The One', 'Nigh on ten years later, the property remains unfinished. By early 2021, the long-delayed project was preparing to hit the market with a much-reduced $340 million ask. By the time it actually entered the ring, that figure had been chopped even further, down to $295 million. And at $126 million, the final sale price represents an eye-popping 57% discount off the already hugely reduced list.'),
-(5, 'images/bel_air.jpg', 'The Chartwell Estate', 'The $195 million Chartwell Estate is the most expensive U.S. residential listing that\'s on a multiple listing service. The property in the Bel Air neighborhood of Los Angeles was home to billionaire media mogul Jerry Perenchio, one-time Univision chairman and CEO, who died in 2017.'),
-(6, 'images/hadid.jpg', 'Le Belvedere', 'The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump, has been put on the market for $85 million. While Hadid developed and resides in the luxury residence, he is not its current owner. After finishing work on the mansion, Hadid sold it to international owners for $50 million back in 2010. ');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `users`
+-- Tabellenstruktur für Tabelle `users`
 --
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
-  `username` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `email` varchar(50) COLLATE armscii8_bin DEFAULT NULL,
-  `password` varchar(50) COLLATE armscii8_bin DEFAULT NULL
+  `username` varchar(50) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(50) DEFAULT NULL,
+  `role` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
 --
--- Dumping data for table `users`
+-- Daten für Tabelle `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `password`) VALUES
-(1, 'Test', 'test@mail.bg', '12345678'),
-(2, 'Boyan', '18102@uktc-bg.com', '12345678'),
-(3, 'Boyanski', 'boyborissov@gmail.com', '123456789'),
-(4, 'boyan', 'boyan@gmail.com', '12345678'),
-(6, 'nikola', 'nikola@gmail.com', 'nikola1234'),
-(7, 'AtanasVassilev', 'vassilevatanas@gmail.com', '123456789'),
-(8, 'emko', 'emo@gmail.com', 'asdfghjk'),
-(9, 'ickoo', 'ickoo@gmail.com', '12345678'),
-(10, 'ivan2023', 'ivan2023@gmail.com', '12345678');
+INSERT INTO `users` (`id`, `username`, `email`, `password`, `role`) VALUES
+(1, 'Test', 'test@mail.com', '12345678', 'user'),
+(2, 'Boyan', '18102@uktc-bg.com', '56', 'admin'),
+(3, 'Boyanski', 'boyborissov@gmail.com', '123456789', 'user'),
+(4, 'boyan', 'boyan@gmail.com', '12345678', 'user'),
+(6, 'nikola', 'nikola@gmail.com', 'nikola1234', 'user'),
+(7, 'AtanasVassilev', 'vassilevatanas@gmail.com', '123456789', 'user'),
+(8, 'emko', 'emo@gmail.com', 'asdfghjk', 'user');
 
 --
--- Indexes for dumped tables
+-- Indizes der exportierten Tabellen
 --
 
 --
--- Indexes for table `agents`
+-- Indizes für die Tabelle `agents`
 --
 ALTER TABLE `agents`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `blog_article`
+-- Indizes für die Tabelle `blog_article`
 --
 ALTER TABLE `blog_article`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `blog_info`
+-- Indizes für die Tabelle `blog_card`
 --
-ALTER TABLE `blog_info`
+ALTER TABLE `blog_card`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `home_page`
+-- Indizes für die Tabelle `contact_form`
+--
+ALTER TABLE `contact_form`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indizes für die Tabelle `home_page`
 --
 ALTER TABLE `home_page`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `property_article`
+-- Indizes für die Tabelle `property_article`
 --
 ALTER TABLE `property_article`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `property_description`
+-- Indizes für die Tabelle `property_description`
 --
 ALTER TABLE `property_description`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `property_info`
---
-ALTER TABLE `property_info`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `users`
+-- Indizes für die Tabelle `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT für exportierte Tabellen
 --
 
 --
--- AUTO_INCREMENT for table `agents`
+-- AUTO_INCREMENT für Tabelle `agents`
 --
 ALTER TABLE `agents`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `blog_article`
+-- AUTO_INCREMENT für Tabelle `blog_article`
 --
 ALTER TABLE `blog_article`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `blog_info`
+-- AUTO_INCREMENT für Tabelle `blog_card`
 --
-ALTER TABLE `blog_info`
+ALTER TABLE `blog_card`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `home_page`
+-- AUTO_INCREMENT für Tabelle `contact_form`
+--
+ALTER TABLE `contact_form`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT für Tabelle `home_page`
 --
 ALTER TABLE `home_page`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `property_article`
+-- AUTO_INCREMENT für Tabelle `property_article`
 --
 ALTER TABLE `property_article`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `property_description`
+-- AUTO_INCREMENT für Tabelle `property_description`
 --
 ALTER TABLE `property_description`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `property_info`
---
-ALTER TABLE `property_info`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT für Tabelle `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

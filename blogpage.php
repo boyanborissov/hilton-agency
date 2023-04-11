@@ -37,7 +37,7 @@
           die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT * FROM blog_info";
+        $sql = "SELECT * FROM blog_card";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -50,9 +50,6 @@
                         <div class="card-body">
                           <div class="card-title">
                             <h2>'. $row['title'].'</h2>
-                          </div>
-                          <div class="card-text">
-                            <p>'. $row['description'].'</p>
                           </div>
                           <form method="get" action="blog-read-more.php" class="mx-auto">
                             <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary">Read More</button>

@@ -14,53 +14,7 @@
 </head>
 <body>
   <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="home.php"><b>THE HILTON AGENCY</b></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-            <a class="nav-link" href="home.php">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.php">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">Properties</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="agents.php">Our Agents</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blogpage.php">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact_form.php">Contact us</a>
-          </li>
-          <?php
-            if(isset($_SESSION['username'])) {
-                echo '<li class="nav-item">
-                        <a class="nav-link" href="#">'. $_SESSION['username'] .'</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="logout.php">Logout</a>
-                      </li>';
-            } else {
-                echo '<li class="nav-item">
-                        <a class="nav-link" href="login.php">Log In</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="register.php">Register</a>
-                      </li>';
-            }
-          ?>
-    </ul>
-    </div>
-  </div>
-  </nav>
+  <?php include('navigation.php'); ?>
 
   <!--About the property-->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -86,7 +40,7 @@
         // output data of each row
         while($row = $result->fetch_assoc()) {
             echo '<div class="carousel-item active">
-                    <img src="'. $row['image'] .'" class="d-block w-100" alt="...">
+                    <img src="'. $row['image1'] .'" class="d-block w-100" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="'. $row['image2'] .'" class="d-block w-100" alt="...">

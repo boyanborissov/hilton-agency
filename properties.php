@@ -22,6 +22,19 @@
     <div class="title">
       <h1>Our Properties</h1>
     <hr>
+
+    <!-- <input type="text" class="form-control" id="search" placeholder="Search..." aria-describedby="button-addon2"><br> -->
+
+    <!--Search Bar -->
+    <div class="input-group mt-4">
+      <input type="text" class="form-control" id="search" placeholder="Search..." aria-describedby="button-addon2">
+      <!--Filter Button -->
+      <button type="button" class="btn bg-primary btn-lg text-light" id="prime" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter</button>
+      <!--Filter Button -->
+    </div>
+
+    <?php include("filterdesign.php"); ?>
+
     </div>
     <div class="row">
       <?php
@@ -29,6 +42,7 @@
         $username = "root";
         $password = "";
         $dbname = "hiltonagency";
+        $sql = "";
 
         // Create connection
         $conn = new mysqli($servername, $username, $password, $dbname);
@@ -37,25 +51,33 @@
           die("Connection failed: " . $conn->connect_error);
         }
 
-        $sql = "SELECT * FROM property_info";
+        if (isset($_SESSION["sqlFilter"])) {
+          $sql = $_SESSION["sqlFilter"];
+          unset($_SESSION["sqlFilter"]);          
+        } else {
+          $sql = "SELECT * FROM property_description";
+        }
+// <div class="card-text" style="text-align:justify">
+//                     <p>'. $row['description'].'</p>
+//                   </div>
+        
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
           // output data of each row
           while($row = $result->fetch_assoc()) {
             echo '
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-5" id = "property">
               <div class="card mb-5 shadow-sm h-100">
 
-                <img src="'. $row['image'].'" class="img-fluid" />
+                <img src="'. $row['main_image'].'" class="img-fluid" />
         
                 <div class="card-body">
                   <div class="card-title">
-                    <h2>'. $row['title'].'</h2>
+                    <h2 class ="text-center fw-bolder fs-1">'. $row['name'].'</h2>
                   </div>
-                  <div class="card-text" style="text-align:justify">
-                    <p>'. $row['description'].'</p>
-                  </div>
+                  <h4 class="fs-4 mb-1 text-center">'. $row["address"] .' </h4>
+                  <p class="text-muted text-center mb-2 ">' . $row["beds"] . ' beds <span>|</span> ' . $row["baths"] . ' baths <span>|</span> ' . $row["size"] . ' sq.ft</p>
                   <div class="card-footer bg-white border-0 text-center">
                   <form method="get" action="properties-read-more.php" class="mx-auto">
                     <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
@@ -89,6 +111,33 @@
                 nav2.classList.remove('bg-dark');
             }
         })
+    </script>
+    <script>
+      const searchInput = document.getElementById("search");
+      searchInput.addEventListener("input", searchCards);
+
+      function searchCards() {
+        const input = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll("#property .card");
+
+        cards.forEach((card) => {
+          const name = card.querySelector("h2").textContent.toLowerCase();
+
+          if (name.includes(input)) {
+            card.parentElement.className = "col-lg-4 col-md-6 col-sm-12 mb-5";
+          } else {
+            card.parentElement.className = "d-none";
+          }
+        });
+      }
+      searchCards();
+
+      let slider = document.getElementById("slider");
+      let price = document.getElementById("price");
+      price.innerHTML = slider.value;
+      slider.onchange = function(event){
+        price.innerHTML = this.value;
+      }
     </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

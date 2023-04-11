@@ -30,15 +30,15 @@
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-xs-12 mb-5">
 					<div class="contact-form">
-						<form>
+						<form  method="post" action="contactprocess.php">
 							<div class="form-group">
-								<input class="form-control bg-dark border-0 text-light" placeholder="Your Name Here" type="text"><br>
+								<input class="form-control bg-dark border-0 text-light" placeholder="Your Name Here" type="text" name="name"><br>
 							</div>
 							<div class="form-group">
-								<input class="form-control bg-dark border-0 text-light" placeholder="Your Email Here" type="email"><br>
+								<input class="form-control bg-dark border-0 text-light" placeholder="Your Email Here" type="email" name="email"><br>
 							</div>
 							<div class="form-group">
-								<textarea class="form-control bg-dark border-0 text-light" cols="30" placeholder="Your Message" rows="10"></textarea>
+								<textarea class="form-control bg-dark border-0 text-light" cols="30" placeholder="Your Message" rows="10" name="message"></textarea>
 							</div>
 							<button class="btn" type="submit">Submit</button><br>
 						</form>

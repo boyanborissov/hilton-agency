@@ -43,7 +43,7 @@
                     <article>
                     <header class="mb-4">	
                       <h1 class="fw-bolder mb-3 ">'. $row['title'].'</h1>
-                      <div class="text-muted fst-italic mb-2 ">'.$row['meta_content'].'</div>
+                      <div class="text-muted fst-italic mb-2 ">'.$row['date'].'</div>
                     </header>
                     <figure class="mb-4"><img src="'. $row['image'].'" class="img-fluid w-100" /></figure>
                       <section class="mb-5">

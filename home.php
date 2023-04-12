@@ -144,64 +144,6 @@
             </div>
         </div>
     </section>
-    <!-- <section id="portfolio" class="portfolio section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header text-center pb-5">
-                        <h2>Exclusive Properties</h2>
-                        <p>Our best properties for your style.</p>
-                    </div>
-                </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-              <div class="card mb-5 shadow-sm h-100">
-
-                <img src="images/lafin1.jpg" class="img-fluid" />
-        
-                <div class="card-body">
-                  <div class="card-title">
-                    <h2>La fin</h2>
-                  </div>
-                  <div class="card-text" style="text-align:justify">
-                    <p> La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million.</p>
-                  </div>
-                </div>
-              </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-              <div class="card mb-5 shadow-sm h-100">
-
-                <img src="images/hadid1.jpg" class="img-fluid" />
-        
-                <div class="card-body">
-                  <div class="card-title">
-                    <h2>La fin</h2>
-                  </div>
-                  <div class="card-text" style="text-align:justify">
-                    <p>The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump. </p>
-                  </div>
-                </div>
-              </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-              <div class="card mb-5 shadow-sm h-100">
-
-                <img src="images/manor-1.jpg" class="img-fluid" />
-        
-                <div class="card-body">
-                  <div class="card-title">
-                    <h2>The Spelling Manor</h2>
-                  </div>
-                  <div class="card-text" style="text-align:justify">
-                    <p> "The Manor" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.</p>
-                  </div>
-                </div>
-              </div>
-    </div>
-            </div>
-        </div>
-    </section> -->
-
     <!--footer-->
     <footer class="bg-dark p-1 text-center">
         <div class="container">
@@ -244,7 +186,6 @@
     </script>
     
 
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>

@@ -19,10 +19,6 @@ $conditions[] = "location='".$_GET['hollHillsCheckbox']."'";
 $_SESSION['isHollHillsChecked'] = "checked";
 }
 
-if (isset($_GET['oneBedCheckbox'])) {
-$conditions[] = "beds='".$_GET['hollHillsCheckbox']."'";
-$_SESSION['isHollHillsChecked'] = "checked";
-}
 
 
 $sql = $query;

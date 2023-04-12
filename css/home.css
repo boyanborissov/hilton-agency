@@ -5,7 +5,7 @@
 header{
     background-color: transparent;
 }
-.navbar-nav a{
+.navbar-nav a, li{
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
@@ -19,7 +19,6 @@ header{
     font-size: 25px;
     
 }
-
 /* .navbar-light{
     text-transform: uppercase;
     font-weight: 700;

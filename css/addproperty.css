@@ -5,7 +5,7 @@
 header{
     background-color: transparent;
 }
-.navbar-nav a{
+.navbar-nav a, li{
     font-size: 18px;
     font-style: italic;
     text-transform: uppercase;
@@ -39,29 +39,6 @@ header{
     width: 100%;
 } */
 
-.video video {
-    object-fit: cover;
-    object-position: 100%;
-}
-
-.section-padding{
-    padding: 100px 0;
-}
-.about-text {
-    text-align: justify;
-    width: 80%;
-    padding-left: 5px;
-}
-
-.services .card-body i{
-font-size: 30px;
-}
-.lead{
-    text-align: center;
-}
-.portfolio .card{
-    box-shadow: 15px 15px 40px rgba(0,0,0,0.15);
-}
 .navbar{
     transition: all 0.5s;
 }

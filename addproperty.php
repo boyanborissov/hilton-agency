@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/addproperty.css?<?php echo time();?>">
 <body>
   <!--Navbar-->
-  <?php include('navigation.php');?>
 
 
 <form action="addpropertyprocess.php" method="post" enctype='multipart/form-data'>

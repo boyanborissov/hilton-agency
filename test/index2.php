@@ -13,83 +13,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="google.scss?<?php echo time();?>">
 </head>
+
 <body>
-<div id="google_translate_element"></div>
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,en,es,jv,ko,pa,pt,ru,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, autoDisplay: false}, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <form method="post" action="">
+  <div class="range">
+            <input type="range" class="form-range" min="85" max="265" step="10" value="175" id="slider"/>
+            <p class="text-center"><span id="price"></span> million$</p>
+          </div>
+            <div>
+              <ul>
+                <li>85 million$</li>
+                <li>265 million$</li>
+              </ul>
+            </div>
+    <button type="submit" name="submit">Search</button>
+  </form>
 
-<h1>Custom styled Google Translate</h1>
-<h2>Including the dropdown!</h2>
-<p>
-  Another method:
-  <a href="https://github.com/wistcc/stylinggt.js">
-    https://github.com/wistcc/stylinggt.js
-  </a>. (Demo: <a href="http://stylinggt.azurewebsites.net">http://stylinggt.azurewebsites.net</a>)
-</p>
-<p>See also: <a href="http://www.techumber.com/make-custom-drop-down-menu-for-google-translate/">this article</a> regarding the Dropdown</p>
+  <?php
+  // connect to database
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "hiltonagency";
 
-<div id="google_translate_element"></div>
+  $conn = mysqli_connect($servername, $username, $password, $dbname);
 
-<script>
-  $('document').ready(function () {
+  // check if form submitted
+  if (isset($_POST['submit'])) {
+    $min_price = 85000000;
+    $priceRange = $_GET['slider'];
 
+    // query database
+    $sql = "SELECT * FROM properties_description WHERE price BETWEEN $min_price AND $max_price";
+    $result = mysqli_query($conn, $sql);
 
-// RESTYLE THE DROPDOWN MENU
-$('#google_translate_element').on("click", function () {
+    // display results
+  }
+  ?>
 
-    // Change font family and color
-    $("iframe").contents().find(".goog-te-menu2-item div, .goog-te-menu2-item:link div, .goog-te-menu2-item:visited div, .goog-te-menu2-item:active div, .goog-te-menu2 *")
-        .css({
-            'color': '#544F4B',
-            'font-family': 'Roboto',
-            'width':'100%'
-        });
-    // Change menu's padding
-    
-  
-    // Change menu's padding
-    $("iframe").contents().find('.goog-te-menu2').css ('padding', '0px');
-  
-    // Change the padding of the languages
-    $("iframe").contents().find('.goog-te-menu2-item div').css('padding', '20px');
-  
-    // Change the width of the languages
-    $("iframe").contents().find('.goog-te-menu2-item').css('width', '100%');
-    $("iframe").contents().find('td').css('width', '100%');
-  
-    // Change hover effects
-    $("iframe").contents().find(".goog-te-menu2-item div").hover(function () {
-        $(this).css('background-color', '#4385F5').find('span.text').css('color', 'white');
-    }, function () {
-        $(this).css('background-color', 'white').find('span.text').css('color', '#544F4B');
-    });
+  <script>
+    let slider = document.getElementById("slider");
+    let price = document.getElementById("price");
+    price.innerHTML = slider.value;
+    slider.onchange = function(event){
+      price.innerHTML = this.value;
+    }
 
-    // Change Google's default blue border
-    $("iframe").contents().find('.goog-te-menu2').css('border', 'none');
+    // var range = document.getElementById("slider");
+    // var minValue = range.min;
+   
 
-    // Change the iframe's box shadow
-    $(".goog-te-menu-frame").css('box-shadow', '0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3)');
-    
-  
-  
-    // Change the iframe's size and position?
-    $(".goog-te-menu-frame").css({
-        'height': '100%',
-        'width': '100%',
-        'top': '0px'
-    });
-    // Change iframes's size
-    $("iframe").contents().find('.goog-te-menu2').css({
-        'height': '100%',
-        'width': '100%'
-    });
-});
-});
-</script>
+  </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>

@@ -51,9 +51,9 @@
                           <div class="card-title">
                             <h2>'. $row['title'].'</h2>
                           </div>
-                          <form method="get" action="blog-read-more.php" class="mx-auto">
-                            <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary">Read More</button>
-                          </form>
+                        <form method="get" action="blog-read-more.php" class="mx-auto">
+                          <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
+                        </form>
                         </div>
                       </div>
                     </div>';

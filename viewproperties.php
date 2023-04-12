@@ -19,16 +19,21 @@ $path = basename(__FILE__, '.php');
 <!--Table-->
 <div class="container my5 pt-5">
       <h2 class="pt-4 text-light">User Table</h2>
-      <a class="btn btn-primary" href="addUser.php" role="button">New User</a>
+      <a class="btn btn-primary" href="addproperty.php" role="button">New Property</a>
       <br>
       <table class="table pt-3">
         <thead class="text-val-red">
             <tr class='border-dark-gray'>
                 <th>ID</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Role</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>Address</th>
+                <th>Beds</th>
+                <th>Baths</th>
+                <th>Size</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Main image</th>
                 <th></th>
             </tr>
         </thead>
@@ -47,7 +52,7 @@ $path = basename(__FILE__, '.php');
                   die("Connection failed: " . $conn->connect_error);
               }
 
-              $sql = "SELECT * FROM users";
+              $sql = "SELECT * FROM property_description";
               $result = $conn->query($sql);
               
               if (!$result) {
@@ -58,18 +63,25 @@ $path = basename(__FILE__, '.php');
                 echo "
                 <tr class='border-dark-gray'>
                     <td>$row[id]</td>
-                    <td>$row[username]</td>
-                    <td>$row[email]</td>
-                    <td>$row[password]</td>
-                    <td>$row[role]</td>
+                    <td>$row[name]</td>
+                    <td>$row[location]</td>
+                    <td>$row[address]</td>
+                    <td>$row[beds]</td>
+                    <td>$row[baths]</td>
+                    <td>$row[size]</td>
+                    <td>$row[price]</td>
+                    <td>$row[description]</td>
+                    <td>$row[main_image]</td>
+
+
                     <td>
                       <div class='form-check form-check-inline'>
-                        <form method='get' action='edituser.php'>
+                        <form method='get' action='editUser.php'>
                           <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Edit</button>
                         </form>
                       </div>
                       <div class='form-check form-check-inline'>
-                        <form method='get' action='deleteuser.php'>
+                        <form method='get' action='deleteproperty.php'>
                           <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Delete</button>
                         </form>
                       </div>

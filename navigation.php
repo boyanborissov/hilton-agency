@@ -42,7 +42,9 @@
                 <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><a class="dropdown-item text-light" href="viewusers.php">View Users</a></li>
                 <li><a class="dropdown-item text-light" href="adduser.php">Add User</a></li>
+                <li><a class="dropdown-item text-light" href="viewproperties.php">View Properties</a></li>
                 <li><a class="dropdown-item text-light" href="addproperty.php">Add Property</a></li>
+                <li><a class="dropdown-item text-light" href="viewblogposts.php">View Blog Posts</a></li>
                 <li><a class="dropdown-item text-light" href="addblogpost.php">Add Blog Post</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>
@@ -61,10 +63,21 @@
           }
         } else {
           echo "
+          <div class='navbar-nav'>
           <a href='login.php' class='nav-item nav-link'>Log In</a>
-          <a href='register.php' class='nav-item nav-link'>Register</a>";
+          <a href='register.php' class='nav-item nav-link'>Register</a>
+          </div>";
         }
       ?>
+  <script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      var selectElement = document.querySelector('.goog-te-combo');
+      var firstOption = selectElement.querySelector('option');
+      firstOption.innerHTML = 'Change your language';
+    }, 1000); // wait for 1 second before updating the option value
+  });
+</script>
     </div>
   </div>
 </nav>

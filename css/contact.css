@@ -5,12 +5,13 @@ body{
  background-image: url(../images/empire.jpg);
   background-size: cover;
 }
-.navbar-nav a{
+.navbar-nav a, li{
   font-size: 18px;
   font-style: italic;
   text-transform: uppercase;
   font-weight: 500;
   color: white;
+  margin-top: 6px;
 }
 .navbar-brand{
   color: white;

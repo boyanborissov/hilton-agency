@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="css/addblogpost.css?<?php echo time();?>">
 <body>
   <!--Navbar-->
-  <?php include('navigation.php');?>
 
 
 <form action="addblogpostprocess.php" method="post" enctype='multipart/form-data'>

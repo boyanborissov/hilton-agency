@@ -28,24 +28,24 @@
       <div class="carousel-item active" data-bs-interval="5000">
         <img src="images/kj.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-          <h5>Your dream home</h5>
-          <p>Find your dream home that fit with your style.</p>
+          <h5 class="text-center">Your dream home</h5>
+          <p class="text-center">Find your dream home that fit with your style.</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
         <img src="images/unica.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-        <h5>UNICA</h5>
-        <p>Sold!</p>
-        <p>&dollar;78,000,000</p>
+        <h5 class="text-center">UNICA</h5>
+        <p class="text-center">Sold!</p>
+        <p class="text-center">&dollar;78,000,000</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
         <img src="images/weeknd.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption">
-        <h5>WEEKND</h5>
-        <p>Sold!</p>
-        <p>&dollar;70,000,000</p>
+        <h5 class="text-center">WEEKND</h5>
+        <p class="text-center">Sold!</p>
+        <p class="text-center">&dollar;70,000,000</p>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
                             <p class="fs-5">Hilton Agency once again led the luxury residential market in Los Angeles in 2022 with a 31% market share of sales priced $70 million and above, a 23% market share of sales priced $55 million and above, and a 19% market share of sales priced $35 million and above. On top of that, our annual sales volume hit $4 billion with an average price per transaction of $27.39 million.</p>
                       </div>
                       <div class="col-6 mb-5 mt-5">
-                        <img src="images/rick-hilton.jpg" alt="">
+                        <img src="images/rick-hilton.jpg" alt="image" style="max-width: 100%; height:auto">
                   </div>
                   <div class="col-6 mt-5"> 
                     <h2 class="text-center">About Rick Hilton</h2>
@@ -94,10 +94,31 @@
   <!--footer-->
   <footer class="bg-dark p-2 text-center">
   <div class="container">
-    <p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
+    <p class="text-white text-center">All Right Reserved &copy;THE HILTON AGENCY</p>
   </div>
   </footer>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
   <script>
         const nav2 = document.querySelector(".navbar");
 

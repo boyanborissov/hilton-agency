@@ -38,8 +38,8 @@
             $conn = new PDO("mysql:host=$servername;dbname=hiltonagency", $dbusername, $dbPassword);
 
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-            $sql = "INSERT INTO users (username,email,password) VALUES (?,?,?)";
+            $role = "user";
+            $sql = "INSERT INTO users (username,email,password,role) VALUES (?,?,?,'$role')";
 
             $stmt= $conn->prepare($sql);
             $stmt->execute([$regName, $regMail, $regPass]);

@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-xxl navbar-dark">
   <div class="container-fluid">
-    <a href="#" class="navbar-brand">
+    <a href="home.php" class="navbar-brand">
       <img src="images/logo.png" height="50"/>
     </a>
     <a class="navbar-brand fw-bolder" href="home.php">THE HILTON AGENCY</a>
@@ -55,7 +55,7 @@
             <div class="btn-group">
               <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
               <ul class="dropdown-menu dropdown-menu-end bg-darker">
-                <li><a class="dropdown-item text-light" href="viewProfile.php">View Profile</a></li>
+                <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>
               </ul>
@@ -75,7 +75,7 @@
       var selectElement = document.querySelector('.goog-te-combo');
       var firstOption = selectElement.querySelector('option');
       firstOption.innerHTML = 'Change your language';
-    }, 1000); // wait for 1 second before updating the option value
+    },500); // wait for 1 second before updating the option value
   });
 </script>
     </div>

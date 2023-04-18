@@ -1,7 +1,12 @@
 *{
     font-family:'Raleway',sans-serif;
-}
 
+}
+body{
+    background-image: url(../images/bgr.jpg);
+    background-size: cover;
+    color: white;
+}
 header{
     background-color: transparent;
 }
@@ -105,4 +110,10 @@ header{
   
   #myBtn:hover {
     background-color: #555;
+  }
+  input, textarea{
+    margin-left: 25%;
+  }
+  #main_image{
+    padding-right: 2% ;
   }

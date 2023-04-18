@@ -16,49 +16,77 @@
   <!--Navbar-->
 <?php include("navigation.php");?>
 
-<div class="container my-5 pt-4">
+<div class="container my-5 pt-4 ">
 <form action="addpropertyprocess.php" method="post" enctype='multipart/form-data'>
+<div class="form-group">
   <label for="property_name">Property name:</label>
-  <input type="text" id="property_name" name="property_name"><br><br>
-  
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="property_name" name="property_name" placeholder="Property name"><br><br>
+  </div>
+
+  <div class="form-group">
   <label for="location">Property neighbourhood:</label>
-  <input type="text" id="location" name="location"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="location" name="location" placeholder="Property neighbourhood"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="address">Property address:</label>
-  <input type="text" id="address" name="address"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="address" name="address" placeholder="Property address"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="bedrooms">Property bedrooms:</label>
-  <input type="number" name="bedrooms" id="bedrooms"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="number" name="bedrooms" id="bedrooms" placeholder="Property bedrooms"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="bathrooms">Property bathrooms:</label>
-  <input type="number" name="bathrooms" id="bathrooms"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="number" name="bathrooms" id="bathrooms" placeholder="Property bathrooms"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="size">Property size:</label>
-  <input type="text" id="size" name="size"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="size" name="size" placeholder="Property size"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="price">Property price:</label>
-  <input type="text" id="price" name="price"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="price" name="price" placeholder="Property price"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="description">Description:</label>
-  <textarea id="description" name="description"></textarea><br><br>
-  
+  <textarea class="form-control bg-dark border-0 text-light w-50 text-center" id="description" name="description" placeholder="Property description"></textarea><br><br>
+  </div>
+
+  <div class="form-group">
   <label for="main_image">Main image:</label>
   <input type="file" id="main_image" name="main_image"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="image1">Image 1:</label>
   <input type="file" id="image1" name="image1"><br><br>
-  
+  </div>
+
+  <div class="form-group">
   <label for="image2">Image 2:</label>
   <input type="file" id="image2" name="image2"><br><br>
-  
+  </div>
+
+  <div class="form-group">
   <label for="image3">Image 3:</label>
   <input type="file" id="image3" name="image3"><br><br>
-  
+  </div>
+
+  <div class="form-group">
   <label for="image4">Image 4:</label>
   <input type="file" id="image4" name="image4"><br><br>
+  </div>
 
+  <div class="form-group">
   <label for="image4">Image 5:</label>
   <input type="file" id="image5" name="image5"><br><br>
+  </div>
 
   <button class="btn" type="submit">Submit</button><br>
 </form>

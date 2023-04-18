@@ -13,9 +13,13 @@ try {
 
     // sql to delete a record
     $sql = "DELETE FROM property_description WHERE id=$userID";
+    $sql1 = "DELETE FROM property_article WHERE id=$userID";
+
 
     // use exec() because no results are returned
     $conn->exec($sql);
+    $conn->exec($sql1);
+
 
     header('Location: viewproperties.php');
     } catch(PDOException $e) {

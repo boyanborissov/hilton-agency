@@ -19,26 +19,26 @@
 <div class="container my-5 pt-4">
 <form action="addblogpostprocess.php" method="post" enctype='multipart/form-data'>
   <label for="bloger_name">Bloger name:</label>
-  <input type="text" id="bloger_name" name="bloger_name"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="bloger_name" name="bloger_name"><br><br>
 
   <label for="title">Blog title:</label>
-  <input type="text" id="title" name="title"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="title" name="title"><br><br>
   
   <label for="blog_date">Blog date:</label>
-  <input type="text" id="blog_date" name="blog_date"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_date" name="blog_date"><br><br>
 
   <label for="month">Blog month:</label>
-  <input type="text" id="month" name="month"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="month" name="month"><br><br>
 
   <label for="blog_year">Blog year:</label>
-  <input type="text" id="blog_year" name="blog_year"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_year" name="blog_year"><br><br>
 
 
   <label for="main_image">Main image:</label>
   <input type="file" id="main_image" name="main_image"><br><br>
 
   <label for="description">Description:</label>
-  <textarea id="description" name="description"></textarea><br><br>
+  <textarea class="form-control bg-dark border-0 text-light w-50 text-center" id="description" name="description"></textarea><br><br>
   
   <button class="btn" type="submit">Submit</button><br>
 

@@ -105,9 +105,7 @@
               <p class="fs-3 mb-4 text-center">' . $row["beds"] . ' beds <span>|</span> ' . $row["baths"] . ' baths <span>|</span> ' . $row["size"] . ' sq.ft</p>
               <h2 class="fw-bold text-center">$' . number_format(round($row["price"]), 0, ',') .'</p>
               </header>
-              <section class="mb-5">
-              '.$row["description"].'
-              </section>';
+              <section class="mb-5">'.$row["description"].'</section>';
             }
           } else {
             echo "0 results";
@@ -115,7 +113,9 @@
           $conn->close();
         ?>
   </article>
-
+      </div>
+    </div>
+  </div>
   <!--footer-->
   <footer class="bg-dark p-2 text-center">
       <div class="container">

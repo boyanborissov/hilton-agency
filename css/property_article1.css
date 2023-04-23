@@ -93,3 +93,14 @@ visibility: hidden !important;
   #myBtn:hover {
     background-color: #555;
   }
+section{
+  text-align: justify;
+}
+
+
+
+@media (max-width: 1200px) {
+  #carouselExampleControls .carousel-item img {
+    height: 750px;
+  }
+}

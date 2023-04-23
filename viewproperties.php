@@ -19,10 +19,11 @@ $path = basename(__FILE__, '.php');
 <!--Table-->
 <div class="container my-5 pt-5">
       <h2 class="pt-4 text-light">User Table</h2>
-      <a class="btn btn-primary" href="addproperty.php" role="button">New Property</a>
+      <a class="btn btn-dark" href="addproperty.php" role="button">New Property</a>
       <br>
+      <div class="table-responsive">
       <table class="table pt-3">
-        <thead class="text-val-red">
+        <thead class="text-light">
             <tr class='border-dark-gray'>
                 <th>ID</th>
                 <th>Name</th>
@@ -32,7 +33,6 @@ $path = basename(__FILE__, '.php');
                 <th>Baths</th>
                 <th>Size</th>
                 <th>Price</th>
-                <th>Description</th>
                 <th>Main image</th>
                 <th></th>
             </tr>
@@ -61,7 +61,7 @@ $path = basename(__FILE__, '.php');
 
               while($row = $result -> fetch_assoc()) {
                 echo "
-                <tr class='border-dark-gray'>
+                <tr class='border-dark-gray text-light'>
                     <td>$row[id]</td>
                     <td>$row[name]</td>
                     <td>$row[location]</td>
@@ -70,19 +70,13 @@ $path = basename(__FILE__, '.php');
                     <td>$row[baths]</td>
                     <td>$row[size]</td>
                     <td>$row[price]</td>
-                    <td>$row[description]</td>
                     <td>$row[main_image]</td>
 
 
                     <td>
                       <div class='form-check form-check-inline'>
-                        <form method='get' action='editUser.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Edit</button>
-                        </form>
-                      </div>
-                      <div class='form-check form-check-inline'>
                         <form method='get' action='deleteproperty.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Delete</button>
+                          <button type='submit' name='userID' value='$row[id]' class='btn btn-dark btn-sm'>Delete</button>
                         </form>
                       </div>
                     </td>

@@ -36,9 +36,9 @@
         if(isset($_SESSION["loggedUser"]) && isset($_SESSION["loggedUserRole"])) {
           if ($_SESSION["loggedUserRole"] == "admin") {
             echo '
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
-              <ul class="dropdown-menu dropdown-menu-end bg-dark">
+            <div class="dropdown">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
+              <ul class="dropdown-menu dropdown-menu-start bg-dark text-uppercase" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><a class="dropdown-item text-light" href="viewusers.php">View Users</a></li>
                 <li><a class="dropdown-item text-light" href="adduser.php">Add User</a></li>
@@ -52,9 +52,9 @@
             </div>';
           } else {
             echo '
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
-              <ul class="dropdown-menu dropdown-menu-end bg-dark">
+            <div class="dropdown">
+              <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
+              <ul class="dropdown-menu dropdown-menu-start bg-dark text-uppercase">
                 <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>

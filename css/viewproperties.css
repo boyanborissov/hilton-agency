@@ -1,7 +1,11 @@
 *{
     font-family:'Raleway',sans-serif;
 }
-
+body{
+    background-image: url(../images/bgr.jpg);
+    background-size: cover;
+    color: white;
+}
 header{
     background-color: transparent;
 }
@@ -112,13 +116,36 @@ font-size: 30px;
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.856);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.856);
+    color: black;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: #000000;
+    color: white;
   }
+  .table-responsive {
+    overflow-x: auto;
+  }
+  @media (max-width: 767px) {
+    .table td, .table th {
+      font-size: 14px;
+      padding: .3rem;
+    }
+}
+    @media (max-width: 500px) {
+        .table td, .table th {
+          font-size: 10px;
+          padding: .3rem;
+        }
+    }
+  
+  
+  
+  
+  
+  
+  

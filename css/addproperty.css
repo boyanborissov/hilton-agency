@@ -101,15 +101,16 @@ header{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: rgba(0, 0, 0, 0.856);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.856);
+    color: black;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: #000000;
+    color: white;
   }
   input, textarea{
     margin-left: 25%;

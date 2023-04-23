@@ -19,17 +19,18 @@ $path = basename(__FILE__, '.php');
 <!--Table-->
 <div class="container my5 pt-5">
       <h2 class="pt-4 text-light">User Table</h2>
-      <a class="btn btn-primary" href="addUser.php" role="button">New User</a>
+      <a class="btn btn-dark" href="addUser.php" role="button">New User</a>
       <br>
+      <div class="table-responsive">
       <table class="table pt-3">
-        <thead class="text-val-red">
+        <thead class="text-light">
             <tr class='border-dark-gray'>
-                <th>ID</th>
-                <th>Username</th>
-                <th>Email</th>
-                <th>Password</th>
-                <th>Role</th>
-                <th></th>
+                <th scope="col">ID</th>
+                <th scope="col">Username</th>
+                <th scope="col">Email</th>
+                <th scope="col">Password</th>
+                <th scope="col">Role</th>
+                <th scope="col"></th>
             </tr>
         </thead>
 
@@ -56,7 +57,7 @@ $path = basename(__FILE__, '.php');
 
               while($row = $result -> fetch_assoc()) {
                 echo "
-                <tr class='border-dark-gray'>
+                <tr class='border-dark-gray text-light'>
                     <td>$row[id]</td>
                     <td>$row[username]</td>
                     <td>$row[email]</td>
@@ -65,12 +66,12 @@ $path = basename(__FILE__, '.php');
                     <td>
                       <div class='form-check form-check-inline'>
                         <form method='get' action='edituser.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Edit</button>
+                          <button type='submit' name='userID' value='$row[id]' class='btn btn-dark btn-sm'>Edit</button>
                         </form>
                       </div>
                       <div class='form-check form-check-inline'>
                         <form method='get' action='deleteuser.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Delete</button>
+                          <button type='submit' name='userID' value='$row[id]' class='btn btn-dark btn-sm'>Delete</button>
                         </form>
                       </div>
                     </td>

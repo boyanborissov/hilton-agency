@@ -28,7 +28,7 @@ $path = basename(__FILE__, '.php');
           <div class="row mb-3">
             <label class="col-sm-3 col-form-label text-light">Username</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control text-light bg-dark-gray border-0" name="username">
+                <input type="text" class="form-control bg-dark border-0 text-light" name="username">
             </div>
           </div>
           <!--Username Input-->
@@ -37,7 +37,7 @@ $path = basename(__FILE__, '.php');
           <div class="row mb-3">
             <label class="col-sm-3 col-form-label text-light">Email</label>
             <div class="col-sm-6">
-                <input type="text" class="form-control text-light bg-dark-gray border-0" name="email">
+                <input type="text" class="form-control bg-dark border-0 text-light" name="email">
             </div>
           </div>
           <!--Email Input-->
@@ -46,7 +46,7 @@ $path = basename(__FILE__, '.php');
           <div class="row mb-3">
             <label class="col-sm-3 col-form-label text-light">Password</label>
             <div class="col-sm-6">
-                <input type="password" class="form-control text-light bg-dark-gray border-0" name="password">
+                <input type="password" class="form-control bg-dark border-0 text-light" name="password">
             </div>
           </div>
 
@@ -54,7 +54,7 @@ $path = basename(__FILE__, '.php');
           <div class="row mb-3">
             <label class="col-sm-3 col-form-label text-light">Role</label>
             <div class="col-sm-6">
-              <select class="form-select text-light bg-dark-gray border-0" aria-label="Select role" name="role">
+              <select class="form-control bg-dark border-0 text-light" aria-label="Select role" name="role">
                 <option selected>Select role</option>
                 <option value="admin">Admin</option>
                 <option value="user">User</option>
@@ -66,10 +66,10 @@ $path = basename(__FILE__, '.php');
           <!--Buttons-->
           <div class="row mb-3">
             <div class="offset-sm-3 col-sm-3 d-grid">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-dark">Submit</button>
             </div>
             <div class="col-sm-3 d-grid">
-                <a class="btn btn-outline-primary" href="viewUsers.php" role="button">Cancel</a>
+                <a class="btn btn-outline-light" href="viewUsers.php" role="button">Cancel</a>
             </div>
           </div>
           <!--Buttons-->

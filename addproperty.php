@@ -88,7 +88,7 @@
   <input type="file" id="image5" name="image5"><br><br>
   </div>
 
-  <button class="btn" type="submit">Submit</button><br>
+  <button class="btn text-light" type="submit">Submit</button><br>
 </form>
 </div>
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>

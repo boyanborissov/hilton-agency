@@ -89,14 +89,9 @@
 </script>
   <script>
         const nav2 = document.querySelector(".navbar");
-
-        window.addEventListener("scroll", () => {
-            if(window.scrollY >= 50){
                 nav2.classList.add('bg-dark');
-            }else if(window.scrollY < 50){
-                nav2.classList.remove('bg-dark');
-            }
-        })
+                
+            
     </script>
 
 <script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>

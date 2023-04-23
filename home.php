@@ -18,11 +18,14 @@
     <?php include('navigation.php');?>
    <!-- Video--> 
     <div class="video">
-        <video class="w-100" autoplay muted loop>
+        <video class="w-100" autoplay muted loop id="myVideo">
             <source  src="images/intro.mp4" type="video/mp4">
         </video>  
+        <h1 class="text-light" >The Leading International <br> Luxury Real Estate Agency</h1>
+        <div class="button-container">
+        <a href="aboutus.php"><button class="btn" id="abou" href>About us ></button></a>
     </div>
-
+    </div>
     <!-- Fixed Video Height-->
     <script>
         function video() {
@@ -33,10 +36,7 @@
             document.getElementById("video").style.height = "" + vh + "px";
         }
     </script>
-    <!-- <div class="content">
-        <h2>Leading number 1 international agency</h2>
-        <a href="aboutus.php">Learn more</a>
-    </div>-->
+  
 
     <!--about section -->
     <section id="about" class="about section-padding">
@@ -123,10 +123,10 @@
                 <div class=" card text-light text-center bg-white pb-2 h-100">
                     <div class="card-body text-dark">
                         <div class="img-area mb-4">
-                            <a href="properties-read-more.php?id=6"><img src="images/hadid.jpg" alt="" class="img-fluid"></a>
+                            <a href="properties-read-more.php?id=6"><img src="images/reserve.jpg" alt="" class="img-fluid"></a>
                         </div>
-                        <h3 class="card-title">Le Belvedere</h3>
-                        <p class="lead">The Hadids are on the move. The Bel Air mansion developed by Mohamed Hadid, father to Gigi and Bella Hadid and friend to Real Housewife Lisa Vanderpump. </p>
+                        <h3 class="card-title">The Reserve</h3>
+                        <p class="lead">The Reserve is an extraordinary, architecturally significant estate situated on two ultra-private acres in the heart of Holmby Hills. </p>
                     </div>
                 </div>
             </div>

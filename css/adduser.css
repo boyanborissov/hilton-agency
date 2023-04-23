@@ -1,7 +1,11 @@
 *{
     font-family:'Raleway',sans-serif;
 }
-
+body{
+    background-image: url(../images/bgr.jpg);
+    background-size: cover;
+    color: white;
+}
 header{
     background-color: transparent;
 }

@@ -19,28 +19,42 @@
 <div class="container my-5 pt-4">
 <form action="addblogpostprocess.php" method="post" enctype='multipart/form-data'>
   <label for="bloger_name">Bloger name:</label>
-  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="bloger_name" name="bloger_name"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="bloger_name" name="bloger_name" placeholder="Bloger name"><br><br>
 
   <label for="title">Blog title:</label>
-  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="title" name="title"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="title" name="title" placeholder="Blog title"><br><br>
   
   <label for="blog_date">Blog date:</label>
-  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_date" name="blog_date"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_date" name="blog_date" placeholder="Blog date"><br><br>
 
-  <label for="month">Blog month:</label>
-  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="month" name="month"><br><br>
+  <label for="month" id="mnt">Blog month:</label><br>
+  <label for="month">Select a month:</label>
+  <select id="month" name="month">
+    <option value="January">January</option>
+    <option value="February">February</option>
+    <option value="March">March</option>
+    <option value="April">April</option>
+    <option value="May">May</option>
+    <option value="June">June</option>
+    <option value="July">July</option>
+    <option value="August">August</option>
+    <option value="September">September</option>
+    <option value="October">October</option>
+    <option value="November">November</option>
+    <option value="December">December</option>
+  </select><br><br>
 
   <label for="blog_year">Blog year:</label>
-  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_year" name="blog_year"><br><br>
+  <input class="form-control bg-dark border-0 text-light w-50 text-center" type="text" id="blog_year" name="blog_year" placeholder="Blog year"><br><br>
 
-
-  <label for="main_image">Main image:</label>
+<div class="imag">
+  <label for="main_image" id="img">Main image:</label>
   <input type="file" id="main_image" name="main_image"><br><br>
-
+</div>
   <label for="description">Description:</label>
-  <textarea class="form-control bg-dark border-0 text-light w-50 text-center" id="description" name="description"></textarea><br><br>
+  <textarea class="form-control bg-dark border-0 text-light w-50 text-center" id="description" name="description" placeholder="Blog description"></textarea><br><br>
   
-  <button class="btn" type="submit">Submit</button><br>
+  <button class="btn text-light" type="submit">Submit</button><br>
 
 </form>
 </div>

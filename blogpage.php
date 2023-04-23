@@ -49,11 +49,13 @@
                 
                         <div class="card-body">
                           <div class="card-title">
-                            <h2>'. $row['title'].'</h2>
+                            <h2 class ="text-center fw-bolder fs-1">'. $row['title'].'</h2>
                           </div>
+                          <div class="card-footer bg-white border-0 text-center">
                         <form method="get" action="blog-read-more.php" class="mx-auto">
                           <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
                         </form>
+                        </div>
                         </div>
                       </div>
                     </div>';

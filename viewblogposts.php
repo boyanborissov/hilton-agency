@@ -19,16 +19,16 @@ $path = basename(__FILE__, '.php');
 <!--Table-->
 <div class="container my-5 pt-5">
       <h2 class="pt-4 text-light">User Table</h2>
-      <a class="btn btn-primary" href="addblogpost.php" role="button">New Blog Post</a>
+      <a class="btn btn-dark" href="addblogpost.php" role="button">New Blog Post</a>
       <br>
+      <div class="table-responsive">
       <table class="table pt-3">
-        <thead class="text-val-red">
+        <thead class="text-light">
             <tr class='border-dark-gray'>
                 <th>ID</th>
                 <th>Image</th>
                 <th>Title</th>
                 <th>Date</th>
-                <th>Description</th>
                 <th></th>
             </tr>
         </thead>
@@ -56,23 +56,17 @@ $path = basename(__FILE__, '.php');
 
               while($row = $result -> fetch_assoc()) {
                 echo "
-                <tr class='border-dark-gray'>
+                <tr class='border-dark-gray text-light'>
                     <td>$row[id]</td>
                     <td>$row[image]</td>
                     <td>$row[title]</td>
                     <td>$row[date]</td>
-                    <td>$row[description]</td>
 
 
                     <td>
                       <div class='form-check form-check-inline'>
-                        <form method='get' action='editUser.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Edit</button>
-                        </form>
-                      </div>
-                      <div class='form-check form-check-inline'>
                         <form method='get' action='deleteblogpost.php'>
-                          <button type='submit' name='userID' value='$row[id]' class='btn btn-primary btn-sm'>Delete</button>
+                          <button type='submit' name='userID' value='$row[id]' class='btn btn-dark btn-sm'>Delete</button>
                         </form>
                       </div>
                     </td>

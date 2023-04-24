@@ -17,7 +17,7 @@
         <a href="contact_form.php" class="nav-item nav-link">Contact us</a>
         <div id='google_translate_element'>
         <script>
-        function googleTranslateElementInit() {
+          function googleTranslateElementInit() {
             new google.translate.TranslateElement({
 
             pageLanguage: 'en,bg',
@@ -27,9 +27,9 @@
             layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
 
             }, 'google_translate_element');
-}
+          }
         </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
       </div>
       <?php 
@@ -38,7 +38,7 @@
             echo '
             <div class="dropdown">
               <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
-              <ul class="dropdown-menu dropdown-menu-start bg-dark text-uppercase" aria-labelledby="dropdownMenuButton1">
+              <ul class="dropdown-menu dropdown-menu-end bg-dark text-uppercase" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><a class="dropdown-item text-light" href="viewusers.php">View Users</a></li>
                 <li><a class="dropdown-item text-light" href="adduser.php">Add User</a></li>
@@ -54,7 +54,7 @@
             echo '
             <div class="dropdown">
               <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
-              <ul class="dropdown-menu dropdown-menu-start bg-dark text-uppercase">
+              <ul class="dropdown-menu dropdown-menu-end bg-dark text-uppercase">
                 <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>

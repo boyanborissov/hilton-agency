@@ -1,14 +1,10 @@
 <?php
     session_start();
 
-    echo "<pre>";
-    var_dump($_GET);
-    echo "<pre>";
-
-    $regName = $_GET["username"];
-    $regMail = $_GET["email"];
-    $regPass = $_GET["password"];
-    $regConfPass = $_GET["confirmPassword"];
+    $regName = $_POST["username"];
+    $regMail = $_POST["email"];
+    $regPass = $_POST["password"];
+    $regConfPass = $_POST["confirmPassword"];
 
     $registerErrors = array();
 
@@ -37,12 +33,13 @@
         try {
             $conn = new PDO("mysql:host=$servername;dbname=hiltonagency", $dbusername, $dbPassword);
 
+            $hashed_password = password_hash($regPass, PASSWORD_DEFAULT);
+
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $role = "user";
-            $sql = "INSERT INTO users (username,email,password,role) VALUES (?,?,?,'$role')";
+            $sql = "INSERT INTO users (`username`, `email`, `password`, `role`) VALUES (?,?,?,?)";
 
             $stmt= $conn->prepare($sql);
-            $stmt->execute([$regName, $regMail, $regPass]);
+            $stmt->execute([$regName, $regMail, $hashed_password, "user"]);
             header("Location: login.php");
             die();
         } catch(PDOException $e) {

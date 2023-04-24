@@ -54,7 +54,7 @@
 	</div>
 
 	<!--footer-->
-	<footer class="bg-dark p-2 text-center">
+	<footer class="m-5 text-center">
 		<div class="container">
 			<p class="text-white">All Right Reserved &copy;THE HILTON AGENCY</p>
 		</div>

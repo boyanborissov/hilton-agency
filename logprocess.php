@@ -1,12 +1,8 @@
 <?php
     session_start();
 
-    echo "<pre>";
-    var_dump($_GET);
-    echo "<pre>";
-
-    $logMail = $_GET["email"];
-    $logPass = $_GET["password"];
+    $logMail = $_POST["email"];
+    $logPass = $_POST["password"];
 
     echo "<pre>";
     $servername = "localhost";
@@ -30,7 +26,7 @@
             $password = $currentRow["password"];
             $role = $currentRow["role"];
 
-            if ($logMail == $email && $logPass == $password) {
+            if ($logMail == $email && password_verify($logPass, $password)) {
                 unset($_SESSION["loginSuccess"]);
                 $_SESSION["loginSuccess"] = "loginSuccess";
 

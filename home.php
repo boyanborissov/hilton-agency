@@ -17,26 +17,15 @@
     <!--Navbar-->
     <?php include('navigation.php');?>
    <!-- Video--> 
-    <div class="video">
+   <div class="video">
         <video class="w-100" autoplay muted loop id="myVideo">
             <source  src="images/intro.mp4" type="video/mp4">
         </video>  
-        <h1 class="text-light" >The Leading International <br> Luxury Real Estate Agency</h1>
         <div class="button-container">
-        <a href="aboutus.php"><button class="btn" id="abou" href>About us ></button></a>
+            <h1 class="text-light" >The Leading International <br> Luxury Real Estate Agency</h1>
+            <a href="aboutus.php"><button class="btn" id="abou" href>About us ></button></a>
+        </div>
     </div>
-    </div>
-    <!-- Fixed Video Height-->
-    <script>
-        function video() {
-            let height = window.innerHeight;
-            var clientHeight = document.getElementById('myDiv').clientHeight;
-
-            var vh = height - clientHeight + 70;
-            document.getElementById("video").style.height = "" + vh + "px";
-        }
-    </script>
-  
 
     <!--about section -->
     <section id="about" class="about section-padding">

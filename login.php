@@ -18,24 +18,24 @@
         <form method="post" action="logprocess.php" autocomplete="off">
           <img class="mb-4" src="images/logo.png" alt="logo" width="102" height="87">
 
-          <h1 class="h2 mb-4 fw-normal text-val-red">Virtual Gun Gallery</h1>
+          <h1 class="h2 mb-4 fw-normal text-light">The Hilton Agency</h1>
 
           <h1 class="h3 mb-4 fw-normal text-light">Log In</h1>
       
           <!--Input Fields-->
           <div class="form-floating text-light">
-            <input type="email" class="form-control bg-darker border-0 text-light" name="email" id="floatingInput" placeholder="name@example.com">
+            <input class="form-control bg-dark border-0 text-light" type="email" class="form-control bg-darker border-0 text-light" name="email" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput" class="text-light">Email address</label>
           </div>
           <div class="form-floating mt-3">
-            <input type="password" class="form-control bg-darker border-0 text-light" name="password" id="floatingPassword" placeholder="Password">
+            <input class="form-control bg-dark border-0 text-light" type="password" class="form-control bg-darker border-0 text-light" name="password" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword" class="text-light">Password</label>
             <!-- <span class="password-toggle-icon"><i class="eye fa-solid fa-eye" style="color: white;"></i></span> -->
           </div>
           
-          <p class="mt-3 mb-2 text-primary">Not a member?<a href="register.php" class="mt-5 mb-2 text-val-red">   Register Now!</a></p>
+          <p class="mt-3 mb-2 text-light">Not a member?<a href="register.php" class="mt-5 mb-2 text-light">   Register Now!</a></p>
       
-          <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Sign in</button>
+          <button class="w-100 btn btn-lg btn-dark mt-3" type="submit">Sign in</button>
           <p class="mt-4 mb-3 text-light">All Right Reserved &copy;THE HILTON AGENCY</p>
 
           <div class="form-floating mt-3">

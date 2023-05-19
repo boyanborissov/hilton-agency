@@ -17,6 +17,7 @@
     <!--Navbar-->
     <?php include('navigation.php');?>
    <!-- Video--> 
+   <div class="hero">
    <div class="video">
         <video class="w-100" autoplay muted loop id="myVideo">
             <source  src="images/intro.mp4" type="video/mp4">
@@ -26,6 +27,7 @@
             <a href="aboutus.php"><button class="btn" id="abou" href>About us ></button></a>
         </div>
     </div>
+   </div>
 
     <!--about section -->
     <section id="about" class="about section-padding">
@@ -96,42 +98,43 @@
                         <p>Our best properties for your style.</p>
                     </div>
                 </div>
-            <div class="col-12 col-md-12 col-lg-4 mb-3">
-                <div class=" card text-light text-center bg-white pb-2 h-100">
-                    <div class="card-body text-dark">
-                        <div class="img-area mb-4">
-                            <a href="properties-read-more.php?id=3"><img src="images/la-fin-mansion .jpg" alt="" class="img-fluid"></a>
-                        </div>
-                        <h3 class="card-title">La fin</h3>
-                        <p class="lead"> La Fin takes it to the next level. Located at 1200 Bel Air Road in the tony Bel-Air neighborhood, the mega-mansion is now on the market for $139 million.</p>
-                    </div>
-                </div>
-            </div>
+                <?php
+          $servername = "localhost";
+          $username = "root";
+          $password = "";
+          $dbname = "hiltonagency";
 
-            <div class="col-12 col-md-12 col-lg-4 mb-3">
+          // Create connection
+          $conn = new mysqli($servername, $username, $password, $dbname);
+          // Check connection
+          if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }
+
+          $sql = "SELECT * FROM home_page";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+              echo '
+              <div class="col-12 col-md-12 col-lg-4 mb-3">
                 <div class=" card text-light text-center bg-white pb-2 h-100">
                     <div class="card-body text-dark">
                         <div class="img-area mb-4">
-                            <a href="properties-read-more.php?id=6"><img src="images/reserve.jpg" alt="" class="img-fluid"></a>
+                            <a href='. $row["property"].' ><img src='. $row["image"].' alt="" class="img-fluid"></a>
                         </div>
-                        <h3 class="card-title">The Reserve</h3>
-                        <p class="lead">The Reserve is an extraordinary, architecturally significant estate situated on two ultra-private acres in the heart of Holmby Hills. </p>
+                        <h3 class="card-title">'. $row["title"].'</h3>
+                        <p class="lead"> '. $row["description"].'</p>
                     </div>
                 </div>
-            </div>
-                <div class="col-12 col-md-12 col-lg-4 mb-3">
-                    <div class=" card text-light text-center bg-white pb-2 h-100">
-                        <div class="card-body text-dark">
-                            <div class="img-area mb-4">
-                                <a href="properties-read-more.php?id=2"><img src="images/manor.jpg" alt="" class="img-fluid"></a>
-                            </div>
-                            <h3 class="card-title">Spelling manor</h3>
-                            <p class="lead">"The Manor" An unparalleled offering, an unrivaled setting, a showplace of the highest caliber. The Manor is undoubtedly one of the finest estates in the World.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </div>';
+            }
+          } else {
+            echo "0 results";
+          }
+          $conn->close();
+        ?>
     </section>
     <!--footer-->
     <footer class="bg-dark p-1 text-center">

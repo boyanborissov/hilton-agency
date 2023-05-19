@@ -15,25 +15,25 @@
     <main class="form-signin w-100 m-auto">
         <form method="post" action="registerprocess.php" autocomplete="off">
           <img class="mb-4" src="images/logo.png" alt="logo" width="102" height="87">
-          <h1 class="h2 mb-4 fw-normal text-val-red">The Hilton Agency</h1>
+          <h1 class="h2 mb-4 fw-normal text-light">The Hilton Agency</h1>
           <h1 class="h3 mb-4 fw-normal text-light">Register</h1>
       
           <!--Input Fields-->
           <div class="form-floating">
-            <input type="text" class="form-control bg-darker border-0 text-light" name="username" id="floatingInput" placeholder="username">
+            <input class="form-control bg-dark border-0 text-light" type="text" class="form-control bg-darker border-0 text-light" name="username" id="floatingInput" placeholder="username">
             <label for="floatingInput" class="text-light">Username</label>
           </div>
           <div class="form-floating mt-3">
-            <input type="email" class="form-control bg-darker border-0 text-light" name="email" id="floatingInput" placeholder="name@example.com">
+            <input class="form-control bg-dark border-0 text-light" type="email" class="form-control bg-darker border-0 text-light" name="email" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput" class="text-light">Email address</label>
           </div>
           <div class="form-floating mt-3">
-            <input type="password" class="form-control bg-darker border-0 text-light" name="password" id="floatingPassword" placeholder="Password">
+            <input class="form-control bg-dark border-0 text-light" type="password" class="form-control bg-darker border-0 text-light" name="password" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword" class="text-light">Password</label>
             <span class="eye-icon"><i class="eye fa-solid fa-eye" style="color: white;"></i></span>
           </div>
           <div class="form-floating mt-3 mb-3">
-            <input type="password" class="form-control bg-darker border-0 text-light" name="confirmPassword" id="floatingPassword" placeholder="Confirm Password">
+            <input class="form-control bg-dark border-0 text-light" type="password" class="form-control bg-darker border-0 text-light" name="confirmPassword" id="floatingPassword" placeholder="Confirm Password">
             <label for="floatingPassword" class="text-light">Confirm Password</label>
             <span class="eye-icon"><i class="eye fa-solid fa-eye" style="color: white;"></i></span>
           </div>

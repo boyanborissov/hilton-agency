@@ -1,32 +1,43 @@
-<?php 
+<?php
 session_start();
 $path = basename(__FILE__, '.php');
-$userID = $_GET['userID'];
-$_SESSION['editUserID'] = $userID;
-$servername = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "hiltonagency";
-              
-//Create connection
-$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
-$sql = "SELECT * FROM users WHERE id='$userID'";
-$result = $conn->query($sql);
+if (isset($_GET["userID"])) {
+    $userID = $_GET["userID"];
+    $_SESSION['editUserID'] = $userID;
 
-if (!$result) {
-  die("Invalid query: " . $conn->error);
-}
+    $servername = "localhost";
+    $dbUsername = "root";
+    $dbPassword = "";
+    $dbName = "hiltonagency";
 
-while($row = $result -> fetch_assoc()) {
-  $_SESSION['editUserName'] = $row['username'];
-  $_SESSION['editEmail'] = $row['email'];
-  $_SESSION['editPassword'] = $row['password'];
-  $_SESSION['editRole'] = $row['role'];
+    // Create connection
+    $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbName);
+
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $userID = $conn->real_escape_string($userID); // Escape the user input to prevent SQL injection
+
+    $sql = "SELECT * FROM users WHERE id='$userID'";
+    $result = $conn->query($sql);
+
+    if (!$result) {
+        die("Invalid query: " . $conn->error);
+    }
+
+    while ($row = $result->fetch_assoc()) {
+        $_SESSION['editUserName'] = $row['username'];
+        $_SESSION['editEmail'] = $row['email'];
+        $_SESSION['editPassword'] = $row['password'];
+        $_SESSION['editRole'] = $row['role'];
+    }
+} else {
+    // Handle the case when "userID" is not set
+    header("Location: viewusers.php");
+
 }
 ?>
 <!DOCTYPE html>
@@ -45,14 +56,13 @@ while($row = $result -> fetch_assoc()) {
 <body>
   <main>
     <!--Navbar-->
-    <?php include('navigation.php'); ?>
     <!--Navbar-->
 
     <!--Form-->
     <div class="container my-5 pt-4">
        <h2 class="text-light">Edit User</h2>
        <form method="get" action="editUserProcess.php">
-          <input type="hidden" name='userID' value="<?php echo $_SESSION["editUserID"]?>">
+          <input type="hidden" name="userID" value="<?php echo $_SESSION["editUserID"]?>">
           <!--Username Input-->
           <div class="row mb-3">
             <label class="col-sm-3 col-form-label text-light">Username</label>

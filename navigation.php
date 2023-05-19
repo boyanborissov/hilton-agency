@@ -4,17 +4,18 @@
       <img src="images/logo.png" height="50"/>
     </a>
     <a class="navbar-brand fw-bolder" href="home.php">THE HILTON AGENCY</a>
-    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="toggleNavbar()">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <div class="navbar-nav">
+      <div class="navbar-nav ">
         <a href="home.php" class="nav-item nav-link">Home</a>
         <a href="aboutus.php" class="nav-item nav-link">About us</a>
         <a href="properties.php" class="nav-item nav-link">Properties</a>
         <a href="agents.php" class="nav-item nav-link">Our agents</a>
         <a href="blogpage.php" class="nav-item nav-link">Blog</a>
         <a href="contact_form.php" class="nav-item nav-link">Contact us</a>
+        <div class="hero-section">
         <div id='google_translate_element'>
         <script>
           function googleTranslateElementInit() {
@@ -31,6 +32,7 @@
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </div>
+      </div>
       </div>
       <?php 
         if(isset($_SESSION["loggedUser"]) && isset($_SESSION["loggedUserRole"])) {
@@ -63,7 +65,7 @@
           }
         } else {
           echo "
-          <div class='navbar-nav'>
+          <div class='navbar-nav d-flex ms-auto'>
           <a href='login.php' class='nav-item nav-link'>Log In</a>
           <a href='register.php' class='nav-item nav-link'>Register</a>
           </div>";
@@ -77,6 +79,10 @@
       firstOption.innerHTML = 'Change your language';
     },500); // wait for 1 second before updating the option value
   });
+  function toggleNavbar() {
+  var navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('custom-bg');
+}
 </script>
     </div>
   </div>

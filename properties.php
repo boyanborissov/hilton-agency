@@ -27,7 +27,7 @@
 
     <!--Search Bar -->
     <div class="input-group mt-4">
-      <input type="text" class="form-control" id="search" placeholder="Search..." aria-describedby="button-addon2">
+      <input type="text" class="form-control" id="search" placeholder="Search by property name..." aria-describedby="button-addon2">
       <!--Filter Button -->
       <button type="button" class="btn bg-primary btn-lg text-light" id="prime" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter</button>
       <!--Filter Button -->
@@ -135,32 +135,22 @@
         })
     </script>
     <script>
-      const searchInput = document.getElementById("search");
-      searchInput.addEventListener("input", searchCards);
+   function searchCards() {
+    const input = document.getElementById("search").value.toLowerCase();
+    const cards = document.querySelectorAll("#property");
 
-      function searchCards() {
-        const input = searchInput.value.toLowerCase();
-        const cards = document.querySelectorAll("#property .card");
-
-        cards.forEach((card) => {
-          const name = card.querySelector("h2").textContent.toLowerCase();
-
-          if (name.includes(input)) {
-            card.parentElement.className = "col-lg-4 col-md-6 col-sm-12 mb-5";
-          } else {
-            card.parentElement.className = "d-none";
-          }
-        });
+    cards.forEach((card) => {
+      const name = card.querySelector("h2").textContent.toLowerCase();
+      if (name.includes(input)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
       }
-      searchCards();
+    });
+  }
 
-      let slider = document.getElementById("slider");
-      let price = document.getElementById("price");
-      price.innerHTML = slider.value;
-      slider.onchange = function(event){
-        price.innerHTML = this.value;
-      }
-    </script>
+  document.getElementById("search").addEventListener("input", searchCards);
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/8831516dec.js" crossorigin="anonymous"></script>

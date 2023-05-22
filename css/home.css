@@ -158,7 +158,7 @@ h1{
 #abou:hover{
   color: white;
 }
-      
+
 /* === responsive css === */
 @media screen and (max-width: 767px) {
     #abou {

@@ -29,7 +29,7 @@
     <div class="input-group mt-4">
       <input type="text" class="form-control" id="search" placeholder="Search by property name..." aria-describedby="button-addon2">
       <!--Filter Button -->
-      <button type="button" class="btn bg-primary btn-lg text-light" id="prime" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter</button>
+      <button type="button" class="btn bg-dark btn-lg text-light" id="prime" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Filter</button>
       <!--Filter Button -->
     </div>
 
@@ -57,10 +57,7 @@
         } else {
           $sql = "SELECT * FROM property_description";
         }
-// <div class="card-text" style="text-align:justify">
-//                     <p>'. $row['description'].'</p>
-//                   </div>
-        
+
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -80,7 +77,7 @@
                   <p class="text-muted text-center mb-2 ">' . $row["beds"] . ' beds <span>|</span> ' . $row["baths"] . ' baths <span>|</span> ' . $row["size"] . ' sq.ft</p>
                   <div class="card-footer bg-white border-0 text-center">
                   <form method="get" action="properties-read-more.php" class="mx-auto">
-                    <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
+                    <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-dark mt-auto">Read More</button>
                   </form>
                 </div>
                 </div>
@@ -116,7 +113,6 @@
             mybutton.style.display = "none";
         }
     }
-
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0;

@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
                     <div class="about-text">
-                        <h2>We provide best quality. Service ever</h2>
+                        <h2>We provide best quality and service ever</h2>
                         <p>Our company is known around the world. We have a high standarts and have a high clientele. With every new client we become more famous and prestigios.In our site we provide the best of the best. What that means:only in our site you can see houses with a long history from world leaders to celebrities.</p>
                     </div>
                 </div>

@@ -53,7 +53,7 @@
                           </div>
                           <div class="card-footer bg-white border-0 text-center">
                         <form method="get" action="blog-read-more.php" class="mx-auto">
-                          <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-primary mt-auto">Read More</button>
+                          <button type="submit" name="id" value="'. $row["id"] .'" class="btn btn-lg btn-outline-dark mt-auto">Read More</button>
                         </form>
                         </div>
                         </div>

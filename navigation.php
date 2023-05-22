@@ -39,19 +39,21 @@
           if ($_SESSION["loggedUserRole"] == "admin") {
             echo '
             <div class="dropdown">
-              <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] .'</button>
-              <ul class="dropdown-menu dropdown-menu-end bg-dark text-uppercase" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
-                <li><a class="dropdown-item text-light" href="viewusers.php">View Users</a></li>
-                <li><a class="dropdown-item text-light" href="adduser.php">Add User</a></li>
-                <li><a class="dropdown-item text-light" href="viewproperties.php">View Properties</a></li>
-                <li><a class="dropdown-item text-light" href="addproperty.php">Add Property</a></li>
-                <li><a class="dropdown-item text-light" href="viewblogposts.php">View Blog Posts</a></li>
-                <li><a class="dropdown-item text-light" href="addblogpost.php">Add Blog Post</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>
-              </ul>
-            </div>';
+            <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">'. $_SESSION['loggedUser'] . '
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end bg-dark text-uppercase">
+              <li><a class="dropdown-item text-light" href="viewprofile.php">View Profile</a></li>
+              <li><a class="dropdown-item text-light" href="viewusers.php">View Users</a></li>
+              <li><a class="dropdown-item text-light" href="adduser.php">Add User</a></li>
+              <li><a class="dropdown-item text-light" href="viewproperties.php">View Properties</a></li>
+              <li><a class="dropdown-item text-light" href="addproperty.php">Add Property</a></li>
+              <li><a class="dropdown-item text-light" href="viewblogposts.php">View Blog Posts</a></li>
+              <li><a class="dropdown-item text-light" href="addblogpost.php">Add Blog Post</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item text-light" href="logout.php">Log Out</a></li>
+            </ul>
+          </div>
+          ';
           } else {
             echo '
             <div class="dropdown">

@@ -24,7 +24,6 @@
                   <label class="form-label fs-6" for="maxSize">Max Size</label>
                   <select class="form-select" name="maxSize" id="maxSize">
                     <option value="">Select Max Size</option>
-                    <option value="30000">30,000 sqft</option>
                     <option value="50000">50,000 sqft</option>
                     <option value="110000">110,000 sqft</option>
                   </select>
